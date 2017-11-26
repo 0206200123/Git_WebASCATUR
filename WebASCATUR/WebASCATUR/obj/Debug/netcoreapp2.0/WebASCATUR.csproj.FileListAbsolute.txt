@@ -1,0 +1,11 @@
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\bin\Debug\netcoreapp2.0\WebASCATUR.deps.json
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\bin\Debug\netcoreapp2.0\WebASCATUR.runtimeconfig.json
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\bin\Debug\netcoreapp2.0\WebASCATUR.runtimeconfig.dev.json
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\bin\Debug\netcoreapp2.0\WebASCATUR.dll
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\bin\Debug\netcoreapp2.0\WebASCATUR.pdb
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\obj\Debug\netcoreapp2.0\WebASCATUR.csprojResolveAssemblyReference.cache
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\obj\Debug\netcoreapp2.0\WebASCATUR.csproj.CoreCompileInputs.cache
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\obj\Debug\netcoreapp2.0\WebASCATUR.AssemblyInfoInputs.cache
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\obj\Debug\netcoreapp2.0\WebASCATUR.AssemblyInfo.cs
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\obj\Debug\netcoreapp2.0\WebASCATUR.dll
+C:\Users\Manue\source\repos\WebASCATUR\WebASCATUR\obj\Debug\netcoreapp2.0\WebASCATUR.pdb
