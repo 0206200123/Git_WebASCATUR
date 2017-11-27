@@ -13,11 +13,4 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Administrativa\Controllers\" />
-    <Folder Include="Areas\Administrativa\Data\" />
-    <Folder Include="Areas\Administrativa\Models\" />
-    <Folder Include="Areas\Administrativa\Views\" />
-  </ItemGroup>
-
 </Project>
