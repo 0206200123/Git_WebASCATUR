@@ -35,6 +35,8 @@ namespace WebASCATUR.Models
         public string ImagenPrimaria { get; set; }
         public string GaleriaImagenes { get; set; }
         public DateTime? FechaIngreso { get; set; }
+        public string Descripcion { get; set; }
+        public string DescripcionIngles { get; set; }
 
         public ICollection<Eventos> Eventos { get; set; }
         public ICollection<Oferta> Oferta { get; set; }

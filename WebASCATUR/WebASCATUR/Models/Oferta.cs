@@ -14,6 +14,8 @@ namespace WebASCATUR.Models
         public DateTime? FechaIngreso { get; set; }
         public string ImagenPrimaria { get; set; }
         public string GaleriaImagenes { get; set; }
+        public string DetalleIngles { get; set; }
+        public decimal? PrecioIngles { get; set; }
 
         public Comercio IdComercioNavigation { get; set; }
     }

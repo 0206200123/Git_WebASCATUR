@@ -31,9 +31,8 @@ namespace WebASCATUR.Models
         //                optionsBuilder.UseSqlServer(@"Server=MANUEL\SQLEXPRESS;Database=AdmWebASCATUR_Default_v1;Trusted_Connection=True;");
         //            }
         //        }
-
         public AdmWebASCATUR_Default_v1Context(DbContextOptions<AdmWebASCATUR_Default_v1Context> options)
-    :   base(options)
+    : base(options)
         { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -47,6 +46,8 @@ namespace WebASCATUR.Models
                 entity.Property(e => e.Cedula)
                     .IsRequired()
                     .HasMaxLength(50);
+
+                entity.Property(e => e.DescripcionIngles).HasColumnName("Descripcion_Ingles");
 
                 entity.Property(e => e.DireccionRepresentante)
                     .HasColumnName("Direccion_Representante")
@@ -105,6 +106,10 @@ namespace WebASCATUR.Models
             {
                 entity.Property(e => e.Detalle)
                     .IsRequired()
+                    .HasMaxLength(200);
+
+                entity.Property(e => e.DetalleIngles)
+                    .HasColumnName("Detalle_Ingles")
                     .HasMaxLength(200);
 
                 entity.Property(e => e.FechaIngreso)
@@ -205,6 +210,10 @@ namespace WebASCATUR.Models
                     .IsRequired()
                     .HasMaxLength(200);
 
+                entity.Property(e => e.DetalleIngles)
+                    .HasColumnName("Detalle_Ingles")
+                    .HasMaxLength(200);
+
                 entity.Property(e => e.FechaIngreso)
                     .HasColumnName("Fecha_Ingreso")
                     .HasColumnType("date");
@@ -222,6 +231,10 @@ namespace WebASCATUR.Models
                     .HasMaxLength(50);
 
                 entity.Property(e => e.Precio).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.PrecioIngles)
+                    .HasColumnName("Precio_Ingles")
+                    .HasColumnType("decimal(18, 0)");
 
                 entity.HasOne(d => d.IdComercioNavigation)
                     .WithMany(p => p.Oferta)
@@ -261,6 +274,10 @@ namespace WebASCATUR.Models
                     .IsRequired()
                     .HasMaxLength(200);
 
+                entity.Property(e => e.DetalleIngles)
+                    .HasColumnName("Detalle_Ingles")
+                    .HasMaxLength(200);
+
                 entity.Property(e => e.FechaIngreso)
                     .HasColumnName("Fecha_Ingreso")
                     .HasColumnType("date");
@@ -278,6 +295,10 @@ namespace WebASCATUR.Models
                     .HasMaxLength(50);
 
                 entity.Property(e => e.Precio).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.PrecioIngles)
+                    .HasColumnName("Precio_Ingles")
+                    .HasColumnType("decimal(18, 0)");
 
                 entity.HasOne(d => d.IdComercioNavigation)
                     .WithMany(p => p.Producto)
@@ -322,6 +343,10 @@ namespace WebASCATUR.Models
                     .IsRequired()
                     .HasMaxLength(200);
 
+                entity.Property(e => e.DetalleIngles)
+                    .HasColumnName("Detalle_Ingles")
+                    .HasMaxLength(200);
+
                 entity.Property(e => e.FechaIngreso)
                     .HasColumnName("Fecha_Ingreso")
                     .HasColumnType("date");
@@ -339,6 +364,10 @@ namespace WebASCATUR.Models
                     .HasMaxLength(50);
 
                 entity.Property(e => e.Precio).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.PrecioIngles)
+                    .HasColumnName("Precio_Ingles")
+                    .HasColumnType("decimal(18, 0)");
 
                 entity.HasOne(d => d.IdComercioNavigation)
                     .WithMany(p => p.Servicio)
