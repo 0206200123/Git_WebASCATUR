@@ -141,14 +141,16 @@ namespace AdmWebASCATUR.Ascatur.Entities
             set { Fields.DireccionRepresentante[this] = value; }
         }
 
-        [DisplayName("Imagen Primaria"), Column("Imagen_Primaria"), Size(100)]
+        [DisplayName("Imagen Primaria"), Column("Imagen_Primaria"), Size(100),
+            ImageUploadEditor(FilenameFormat = "Comercio/ImagenPrimaria/~")]
         public String ImagenPrimaria
         {
             get { return Fields.ImagenPrimaria[this]; }
             set { Fields.ImagenPrimaria[this] = value; }
         }
 
-        [DisplayName("Galería Imagenes"), Column("Galeria_Imagenes")]
+        [DisplayName("Galería Imagenes"), Column("Galeria_Imagenes"),
+            MultipleImageUploadEditor(FilenameFormat = "Comercio/GaleriaImagenes/~")]
         public String GaleriaImagenes
         {
             get { return Fields.GaleriaImagenes[this]; }
