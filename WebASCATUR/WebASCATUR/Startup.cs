@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using WebASCATUR.Models;
 
 namespace WebASCATUR
 {
@@ -22,6 +24,9 @@ namespace WebASCATUR
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            var connection = @"Server=MANUEL\SQLEXPRESS;Database=AdmWebASCATUR_Default_v1;Trusted_Connection=True;";
+            services.AddDbContext<AdmWebASCATUR_Default_v1Context>(options => options.UseSqlServer(connection));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,7 +48,7 @@ namespace WebASCATUR
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Default}/{action=Index}/{id?}");
             });
         }
     }

@@ -1,0 +1,24 @@
+﻿{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "emitBOM": true,
+    "sourceMap": true,
+    "outFile": "wwwroot/Scripts/site/AdmWebASCATUR.Web.js",
+    "target": "es5",
+    "typeRoots": [
+      "./node_modules/@types/"
+    ]
+  },
+  "exclude": [
+    ".vs/",
+    "bin/",
+    "obj/",
+    "App_Data/",
+    "Views/",
+    "node_modules/",
+    "wwwroot/"
+  ]
+}
