@@ -9,8 +9,8 @@ using MyPages = AdmWebASCATUR.Ascatur.Pages;
 [assembly: NavigationLink(2100, "Ascatur/Comercio", typeof(MyPages.ComercioController), icon: "fa-book")]
 
 [assembly: NavigationMenu(9000, "Administration", icon: "fa-desktop")]
-[assembly: NavigationLink(9000, "Administration/Languages", typeof(Administration.LanguageController), icon: "fa-comments")]
-[assembly: NavigationLink(9000, "Administration/Translations", typeof(Administration.TranslationController), icon: "fa-comment-o")]
-[assembly: NavigationLink(9000, "Administration/Sergen", typeof(Administration.SergenController), icon: "fa-magic")]
-[assembly: NavigationLink(9000, "Administration/Roles", typeof(Administration.RoleController), icon: "fa-lock")]
-[assembly: NavigationLink(9000, "Administration/User Management", typeof(Administration.UserController), icon: "fa-users")]
+[assembly: NavigationLink(9100, "Administration/Languages", typeof(Administration.LanguageController), icon: "fa-comments")]
+[assembly: NavigationLink(9200, "Administration/Translations", typeof(Administration.TranslationController), icon: "fa-comment-o")]
+[assembly: NavigationLink(9300, "Administration/Sergen", typeof(Administration.SergenController), icon: "fa-magic")]
+[assembly: NavigationLink(9400, "Administration/Roles", typeof(Administration.RoleController), icon: "fa-lock")]
+[assembly: NavigationLink(9500, "Administration/User Management", typeof(Administration.UserController), icon: "fa-users")]

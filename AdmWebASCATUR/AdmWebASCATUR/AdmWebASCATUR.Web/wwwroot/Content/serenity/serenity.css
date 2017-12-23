@@ -2409,6 +2409,7 @@ body.mobile-device.modal-dialog-open {
 .file-item .thumb {
   background-repeat: no-repeat;
   background-position: left top;
+  background-size: cover;
   display: block;
   width: 128px;
   height: 96px;

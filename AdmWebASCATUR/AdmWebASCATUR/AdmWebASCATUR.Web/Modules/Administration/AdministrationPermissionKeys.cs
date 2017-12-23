@@ -13,5 +13,8 @@ namespace AdmWebASCATUR.Administration
 
         [Description("Languages and Translations")]
         public const string Translation = "Administration:Translation";
+
+        [Description("Comercio")]
+        public const string Comercio = "Administration:Comercio";
     }
 }

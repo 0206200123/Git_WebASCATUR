@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "8046ab15a82709ecb9399edc0febaebbc155588b"
+    "signature": "3248868be36fb674c9222b17928fbffb96a21355"
   },
   "compilationOptions": {
     "defines": [
@@ -33,7 +33,7 @@
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.TypeScript.MSBuild": "2.5.3",
           "Serenity.FluentMigrator.Runner": "1.6.904",
-          "Serenity.Web": "3.3.12"
+          "Serenity.Web": "3.3.13"
         },
         "runtime": {
           "AdmWebASCATUR.Web.dll": {}
@@ -2706,7 +2706,7 @@
           "jQuery": "3.1.1"
         }
       },
-      "Serenity.Core/3.3.12": {
+      "Serenity.Core/3.3.13": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Memory": "2.0.0",
           "Microsoft.Extensions.DependencyModel": "2.0.3",
@@ -2724,11 +2724,11 @@
           "lib/netstandard2.0/Serenity.Core.dll": {}
         }
       },
-      "Serenity.Data/3.3.12": {
+      "Serenity.Data/3.3.13": {
         "dependencies": {
           "Dapper": "1.50.2",
           "Newtonsoft.Json": "10.0.3",
-          "Serenity.Core": "3.3.12",
+          "Serenity.Core": "3.3.13",
           "System.Data.Common": "4.3.0",
           "System.Data.SqlClient": "4.4.0",
           "System.Threading.Thread": "4.3.0"
@@ -2740,11 +2740,11 @@
           "lib/netstandard2.0/Serenity.Data.dll": {}
         }
       },
-      "Serenity.Data.Entity/3.3.12": {
+      "Serenity.Data.Entity/3.3.13": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
-          "Serenity.Core": "3.3.12",
-          "Serenity.Data": "3.3.12",
+          "Serenity.Core": "3.3.13",
+          "Serenity.Data": "3.3.13",
           "System.Data.Common": "4.3.0"
         },
         "runtime": {
@@ -2785,12 +2785,12 @@
           "lib/netstandard1.6/Serenity.FluentMigrator.Runner.dll": {}
         }
       },
-      "Serenity.Services/3.3.12": {
+      "Serenity.Services/3.3.13": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
-          "Serenity.Core": "3.3.12",
-          "Serenity.Data": "3.3.12",
-          "Serenity.Data.Entity": "3.3.12",
+          "Serenity.Core": "3.3.13",
+          "Serenity.Data": "3.3.13",
+          "Serenity.Data.Entity": "3.3.13",
           "System.Data.Common": "4.3.0",
           "System.Net.Requests": "4.3.0"
         },
@@ -2801,7 +2801,7 @@
           "lib/netstandard2.0/Serenity.Services.dll": {}
         }
       },
-      "Serenity.Web/3.3.12": {
+      "Serenity.Web/3.3.13": {
         "dependencies": {
           "Dapper": "1.50.2",
           "Microsoft.AspNetCore.Mvc.Core": "2.0.1",
@@ -2813,10 +2813,10 @@
           "NUglify": "1.5.8",
           "Newtonsoft.Json": "10.0.3",
           "Select2.js": "3.5.1",
-          "Serenity.Core": "3.3.12",
-          "Serenity.Data": "3.3.12",
-          "Serenity.Data.Entity": "3.3.12",
-          "Serenity.Services": "3.3.12",
+          "Serenity.Core": "3.3.13",
+          "Serenity.Data": "3.3.13",
+          "Serenity.Data.Entity": "3.3.13",
+          "Serenity.Services": "3.3.13",
           "Serenity.Web.Assets": "3.3.10",
           "System.Data.Common": "4.3.0",
           "System.Data.SqlClient": "4.4.0",
@@ -5922,26 +5922,26 @@
       "path": "select2.js/3.5.1",
       "hashPath": "select2.js.3.5.1.nupkg.sha512"
     },
-    "Serenity.Core/3.3.12": {
+    "Serenity.Core/3.3.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-k7RLFnMX60PXhMYur8nKGhD1L+KDHeut+j+ujeYXdqwNa79I23oac9vEdzMKg8nz6xSJcDn2QbCrb+hdTM9V0Q==",
-      "path": "serenity.core/3.3.12",
-      "hashPath": "serenity.core.3.3.12.nupkg.sha512"
+      "sha512": "sha512-10zoZFG5QH7/UmCRBO0n94YJwgo+r0ZCEBK5BZO1/jl/GvUSoq6gLYq8jqOmoH6WggUSIJPuET5gJLe2A3f9Cw==",
+      "path": "serenity.core/3.3.13",
+      "hashPath": "serenity.core.3.3.13.nupkg.sha512"
     },
-    "Serenity.Data/3.3.12": {
+    "Serenity.Data/3.3.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sXLkHvP6BZkt813mp0dae3OAHy5C4KqY1czGURWVLD7kRHX9yAF8pi2si1XRF87UXvK3e8ra3Ukle0DWJWg9hQ==",
-      "path": "serenity.data/3.3.12",
-      "hashPath": "serenity.data.3.3.12.nupkg.sha512"
+      "sha512": "sha512-iHu3XV77IRkjf0pu5lfD5qvK4yRckMO8nwWiq46UNT6eZcu/iMc8DtkydUZwAsL5CrfVDoQDllUo2fckcupQIw==",
+      "path": "serenity.data/3.3.13",
+      "hashPath": "serenity.data.3.3.13.nupkg.sha512"
     },
-    "Serenity.Data.Entity/3.3.12": {
+    "Serenity.Data.Entity/3.3.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SxqmUnUbpvezm8LWunhvrn5NxEwA4XG/Dsjbdm1EcKSTWMdnc8OZowoL6ZdYZZ4Rl4F6r2Jd+wIuVOATXwoiGw==",
-      "path": "serenity.data.entity/3.3.12",
-      "hashPath": "serenity.data.entity.3.3.12.nupkg.sha512"
+      "sha512": "sha512-2KyNguQzRRK/jfG0HiXAcapK1y9e3elQlmZH0+t66V/u/xBEzVSC8K5R97WcpVATa+wM9A8+gsyoQWlPd7lxOQ==",
+      "path": "serenity.data.entity/3.3.13",
+      "hashPath": "serenity.data.entity.3.3.13.nupkg.sha512"
     },
     "Serenity.FluentMigrator/1.6.904": {
       "type": "package",
@@ -5957,19 +5957,19 @@
       "path": "serenity.fluentmigrator.runner/1.6.904",
       "hashPath": "serenity.fluentmigrator.runner.1.6.904.nupkg.sha512"
     },
-    "Serenity.Services/3.3.12": {
+    "Serenity.Services/3.3.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-chzulBXHYch5fhaWN1LkOs8u6diDPNorKzp9wq4W5BYgiFW+RTOaxCcfkaeSS8Siow2eIZ3sPpizaNE/jLoI9w==",
-      "path": "serenity.services/3.3.12",
-      "hashPath": "serenity.services.3.3.12.nupkg.sha512"
+      "sha512": "sha512-9SjzHerHYzBkhm4yIs8R8Zzsj73/uHFkCU5eDV7el6agZJM08FgpGY5TOjwPbcOSguDwNlvBcoiMQCx5n5raew==",
+      "path": "serenity.services/3.3.13",
+      "hashPath": "serenity.services.3.3.13.nupkg.sha512"
     },
-    "Serenity.Web/3.3.12": {
+    "Serenity.Web/3.3.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0dlicmSO84Fkub7kbruucn/RMmQ0r8Xy0PUmyWRKKiwaHLpRJ6FnfSjyXGMZlO00Nfws1kQTVhrylvo3ce+CdA==",
-      "path": "serenity.web/3.3.12",
-      "hashPath": "serenity.web.3.3.12.nupkg.sha512"
+      "sha512": "sha512-AMbGxO54uaiPU30vyg3f4FjAITG5upf3PnWiodIhkHB+BVLarC/+FI9LVjSDjV8E22OUXHPpKCEZO1BfOAkwKQ==",
+      "path": "serenity.web/3.3.13",
+      "hashPath": "serenity.web.3.3.13.nupkg.sha512"
     },
     "Serenity.Web.Assets/3.3.10": {
       "type": "package",

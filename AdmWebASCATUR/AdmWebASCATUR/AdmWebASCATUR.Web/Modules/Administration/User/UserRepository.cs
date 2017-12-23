@@ -212,6 +212,12 @@ namespace AdmWebASCATUR.Administration.Repositories
                 {
                     Row.Source = "site";
                     Row.IsActive = Row.IsActive ?? 1;
+                    if (!Authorization.HasPermission(Administration.PermissionKeys.Comercio) ||
+                        Row.Id_Comercio == null)
+                    {
+                        Row.Id_Comercio = ((UserDefinition)Authorization.UserDefinition)
+                            .Id_Comercio;
+                    }
                 }
 
                 if (IsCreate || !Row.Password.IsEmptyOrNull())
@@ -251,8 +257,40 @@ namespace AdmWebASCATUR.Administration.Repositories
             }
         }
 
-        private class MyUndeleteHandler : UndeleteRequestHandler<MyRow> { }
-        private class MyRetrieveHandler : RetrieveRequestHandler<MyRow> { }
-        private class MyListHandler : ListRequestHandler<MyRow> { }
+        private class MyUndeleteHandler : UndeleteRequestHandler<MyRow>
+        {
+            protected override void ValidateRequest()
+            {
+                base.ValidateRequest();
+
+                var user = (UserDefinition)Authorization.UserDefinition;
+                if (Row.Id_Comercio != user.Id_Comercio)
+                    Authorization.ValidatePermission(PermissionKeys.Comercio);
+            }
+        }
+
+        private class MyRetrieveHandler : RetrieveRequestHandler<MyRow>
+        {
+            protected override void PrepareQuery(SqlQuery query)
+            {
+                base.PrepareQuery(query);
+
+                var user = (UserDefinition)Authorization.UserDefinition;
+                if (!Authorization.HasPermission(PermissionKeys.Comercio))
+                    query.Where(fld.Id_Comercio == user.Id_Comercio);
+            }
+        }
+
+        private class MyListHandler : ListRequestHandler<MyRow>
+        {
+            protected override void ApplyFilters(SqlQuery query)
+            {
+                base.ApplyFilters(query);
+
+                var user = (UserDefinition)Authorization.UserDefinition;
+                if (!Authorization.HasPermission(PermissionKeys.Comercio))
+                    query.Where(fld.Id_Comercio == user.Id_Comercio);
+            }
+        }
     }
 }

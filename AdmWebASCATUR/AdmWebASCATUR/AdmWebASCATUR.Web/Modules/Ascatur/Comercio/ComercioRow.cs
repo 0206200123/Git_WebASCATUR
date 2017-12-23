@@ -11,8 +11,9 @@ namespace AdmWebASCATUR.Ascatur.Entities
 
     [ConnectionKey("ASCATUR"), TableName("[dbo].[Comercio]")]
     [DisplayName("Comercio"), InstanceName("Comercio"), TwoLevelCached]
-    [ReadPermission("Administration:General")]
-    [ModifyPermission("Administration:General")]
+    [ReadPermission("PermissionKeys:Comercio")]
+    [ModifyPermission("PermissionKeys:Comercio")]
+    [LookupScript("Administration:Comercio")]
     public sealed class ComercioRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Identity]
@@ -141,17 +142,15 @@ namespace AdmWebASCATUR.Ascatur.Entities
             set { Fields.DireccionRepresentante[this] = value; }
         }
 
-        [DisplayName("Imagen Primaria"), Column("Imagen_Primaria"), Size(100),
-            ImageUploadEditor(FilenameFormat = "Comercio/ImagenPrimaria/~")]
-        public String ImagenPrimaria
+        [DisplayName("Imagen Primaria"), Column("Imagen_Primaria"), Size(100), ImageUploadEditor(FilenameFormat = "Comercio/ImagenPrimaria/~",CopyToHistory =true)]
+        public string ImagenPrimaria
         {
             get { return Fields.ImagenPrimaria[this]; }
             set { Fields.ImagenPrimaria[this] = value; }
         }
 
-        [DisplayName("Galería Imagenes"), Column("Galeria_Imagenes"),
-            MultipleImageUploadEditor(FilenameFormat = "Comercio/GaleriaImagenes/~")]
-        public String GaleriaImagenes
+        [DisplayName("Galería Imagenes"), Column("Galeria_Imagenes"), Size(100), MultipleImageUploadEditor(FilenameFormat = "Comercio/GaleriaImagenes/~")]
+        public string GaleriaImagenes
         {
             get { return Fields.GaleriaImagenes[this]; }
             set { Fields.GaleriaImagenes[this] = value; }

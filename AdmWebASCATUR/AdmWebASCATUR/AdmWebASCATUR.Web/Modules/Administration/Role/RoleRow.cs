@@ -1,6 +1,7 @@
 ﻿
 namespace AdmWebASCATUR.Administration.Entities
 {
+    using AdmWebASCATUR.Web.Modules.Ascatur.Comercio;
     using Serenity.ComponentModel;
     using Serenity.Data;
     using Serenity.Data.Mapping;
@@ -11,7 +12,7 @@ namespace AdmWebASCATUR.Administration.Entities
     [ReadPermission(PermissionKeys.Security)]
     [ModifyPermission(PermissionKeys.Security)]
     [LookupScript("Administration.Role")]
-    public sealed class RoleRow : Row, IIdRow, INameRow
+    public sealed class RoleRow : Row, IIdRow, INameRow, IMultiComercioRow
     {
         [DisplayName("Role Id"), Identity, ForeignKey("Roles", "RoleId"), LeftJoin("jRole")]
         public Int32? RoleId
@@ -27,6 +28,12 @@ namespace AdmWebASCATUR.Administration.Entities
             set { Fields.RoleName[this] = value; }
         }
 
+        [Insertable(false), Updatable(false)]
+        public Int32? Id_Comercio
+        {
+            get { return Fields.Id_Comercio[this]; }
+            set { Fields.Id_Comercio[this] = value; }
+        }
 
         IIdField IIdRow.IdField
         {
@@ -37,6 +44,8 @@ namespace AdmWebASCATUR.Administration.Entities
         {
             get { return Fields.RoleName; }
         }
+
+        public Int32Field IdComercioField => throw new NotImplementedException();
 
         public static readonly RowFields Fields = new RowFields().Init();
 
@@ -49,6 +58,7 @@ namespace AdmWebASCATUR.Administration.Entities
         {
             public Int32Field RoleId;
             public StringField RoleName;
+            public Int32Field Id_Comercio;
 
             public RowFields()
                 : base("Roles")

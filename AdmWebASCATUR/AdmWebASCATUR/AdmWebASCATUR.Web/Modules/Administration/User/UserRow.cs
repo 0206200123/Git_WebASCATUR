@@ -1,13 +1,14 @@
 ﻿
 namespace AdmWebASCATUR.Administration.Entities
 {
+    using AdmWebASCATUR.Ascatur.Entities;
     using Serenity.ComponentModel;
     using Serenity.Data;
     using Serenity.Data.Mapping;
     using System;
     using System.ComponentModel;
 
-    [ConnectionKey("Default"), TableName("Users"), DisplayName("Users"), InstanceName("User"), TwoLevelCached]
+    [ConnectionKey("Default"), TableName("Users"),  DisplayName("Users"), InstanceName("User"), TwoLevelCached]
     [ReadPermission(PermissionKeys.Security)]
     [ModifyPermission(PermissionKeys.Security)]
     [LookupScript("Administration.User", Permission = PermissionKeys.Security)]
@@ -98,6 +99,22 @@ namespace AdmWebASCATUR.Administration.Entities
             set { Fields.LastDirectoryUpdate[this] = value; }
         }
 
+        [DisplayName("Comercio"), ForeignKey("Comercio", "Id"), LeftJoin("tnt")]
+        [LookupEditor(typeof(ComercioRow))]
+        [ReadPermission(PermissionKeys.Comercio)]
+        public Int32? Id_Comercio
+        {
+            get { return Fields.Id_Comercio[this]; }
+            set { Fields.Id_Comercio[this] = value; }
+        }
+
+        [DisplayName("Comercio"), Expression("tnt.Nombre")]
+        public String Nombre
+        {
+            get { return Fields.Nombre[this]; }
+            set { Fields.Nombre[this] = value; }
+        }
+
         IIdField IIdRow.IdField
         {
             get { return Fields.UserId; }
@@ -132,6 +149,8 @@ namespace AdmWebASCATUR.Administration.Entities
             public StringField UserImage;
             public DateTimeField LastDirectoryUpdate;
             public Int16Field IsActive;
+            public Int32Field Id_Comercio;
+            public StringField Nombre;
 
             public StringField Password;
             public StringField PasswordConfirm;
