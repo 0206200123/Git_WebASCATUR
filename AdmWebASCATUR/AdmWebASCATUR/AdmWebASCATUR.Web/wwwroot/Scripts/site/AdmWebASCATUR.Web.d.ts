@@ -271,6 +271,46 @@ declare namespace AdmWebASCATUR {
     }
 }
 declare namespace AdmWebASCATUR.Ascatur {
+    class ServicioDialog extends Serenity.EntityDialog<ServicioRow, any> {
+        protected getFormKey(): string;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getNameProperty(): string;
+        protected getService(): string;
+        protected form: ServicioForm;
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class ServicioGrid extends Serenity.EntityGrid<ServicioRow, any> {
+        protected getColumnsKey(): string;
+        protected getDialogType(): typeof ServicioDialog;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getService(): string;
+        constructor(container: JQuery);
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class ProductoDialog extends Serenity.EntityDialog<ProductoRow, any> {
+        protected getFormKey(): string;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getNameProperty(): string;
+        protected getService(): string;
+        protected form: ProductoForm;
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class ProductoGrid extends Serenity.EntityGrid<ProductoRow, any> {
+        protected getColumnsKey(): string;
+        protected getDialogType(): typeof ProductoDialog;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getService(): string;
+        constructor(container: JQuery);
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
     class OpinionDialog extends Serenity.EntityDialog<OpinionRow, any> {
         protected getFormKey(): string;
         protected getIdProperty(): string;
@@ -284,6 +324,46 @@ declare namespace AdmWebASCATUR.Ascatur {
     class OpinionGrid extends Serenity.EntityGrid<OpinionRow, any> {
         protected getColumnsKey(): string;
         protected getDialogType(): typeof OpinionDialog;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getService(): string;
+        constructor(container: JQuery);
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class OfertaDialog extends Serenity.EntityDialog<OfertaRow, any> {
+        protected getFormKey(): string;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getNameProperty(): string;
+        protected getService(): string;
+        protected form: OfertaForm;
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class OfertaGrid extends Serenity.EntityGrid<OfertaRow, any> {
+        protected getColumnsKey(): string;
+        protected getDialogType(): typeof OfertaDialog;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getService(): string;
+        constructor(container: JQuery);
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class EventosDialog extends Serenity.EntityDialog<EventosRow, any> {
+        protected getFormKey(): string;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getNameProperty(): string;
+        protected getService(): string;
+        protected form: EventosForm;
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class EventosGrid extends Serenity.EntityGrid<EventosRow, any> {
+        protected getColumnsKey(): string;
+        protected getDialogType(): typeof EventosDialog;
         protected getIdProperty(): string;
         protected getLocalTextPrefix(): string;
         protected getService(): string;
@@ -1001,6 +1081,137 @@ declare namespace AdmWebASCATUR.Ascatur {
     }
 }
 declare namespace AdmWebASCATUR.Ascatur {
+    class EventosForm extends Serenity.PrefixedContext {
+        static formKey: string;
+    }
+    interface EventosForm {
+        IdComercio: Serenity.IntegerEditor;
+        Nombre: Serenity.StringEditor;
+        Detalle: Serenity.StringEditor;
+        FechaRealizar: Serenity.DateEditor;
+        Hora: Serenity.StringEditor;
+        FechaIngreso: Serenity.DateEditor;
+        ImagenPrimaria: Serenity.StringEditor;
+        GaleriaImagenes: Serenity.StringEditor;
+        DetalleIngles: Serenity.StringEditor;
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    interface EventosRow {
+        Id?: number;
+        IdComercio?: number;
+        Nombre?: string;
+        Detalle?: string;
+        FechaRealizar?: string;
+        Hora?: string;
+        FechaIngreso?: string;
+        ImagenPrimaria?: string;
+        GaleriaImagenes?: string;
+        DetalleIngles?: string;
+    }
+    namespace EventosRow {
+        const idProperty = "Id";
+        const nameProperty = "Nombre";
+        const localTextPrefix = "Ascatur.Eventos";
+        namespace Fields {
+            const Id: any;
+            const IdComercio: any;
+            const Nombre: any;
+            const Detalle: any;
+            const FechaRealizar: any;
+            const Hora: any;
+            const FechaIngreso: any;
+            const ImagenPrimaria: any;
+            const GaleriaImagenes: any;
+            const DetalleIngles: any;
+        }
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    namespace EventosService {
+        const baseUrl = "Ascatur/Eventos";
+        function Create(request: Serenity.SaveRequest<EventosRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Update(request: Serenity.SaveRequest<EventosRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<EventosRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<EventosRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        namespace Methods {
+            const Create: string;
+            const Update: string;
+            const Delete: string;
+            const Retrieve: string;
+            const List: string;
+        }
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class OfertaForm extends Serenity.PrefixedContext {
+        static formKey: string;
+    }
+    interface OfertaForm {
+        IdComercio: Serenity.IntegerEditor;
+        Nombre: Serenity.StringEditor;
+        Detalle: Serenity.StringEditor;
+        Precio: Serenity.DecimalEditor;
+        Cantidad: Serenity.DecimalEditor;
+        FechaIngreso: Serenity.DateEditor;
+        ImagenPrimaria: Serenity.StringEditor;
+        GaleriaImagenes: Serenity.StringEditor;
+        DetalleIngles: Serenity.StringEditor;
+        PrecioIngles: Serenity.DecimalEditor;
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    interface OfertaRow {
+        Id?: number;
+        IdComercio?: number;
+        Nombre?: string;
+        Detalle?: string;
+        Precio?: number;
+        Cantidad?: number;
+        FechaIngreso?: string;
+        ImagenPrimaria?: string;
+        GaleriaImagenes?: string;
+        DetalleIngles?: string;
+        PrecioIngles?: number;
+    }
+    namespace OfertaRow {
+        const idProperty = "Id";
+        const nameProperty = "Nombre";
+        const localTextPrefix = "Ascatur.Oferta";
+        namespace Fields {
+            const Id: any;
+            const IdComercio: any;
+            const Nombre: any;
+            const Detalle: any;
+            const Precio: any;
+            const Cantidad: any;
+            const FechaIngreso: any;
+            const ImagenPrimaria: any;
+            const GaleriaImagenes: any;
+            const DetalleIngles: any;
+            const PrecioIngles: any;
+        }
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    namespace OfertaService {
+        const baseUrl = "Ascatur/Oferta";
+        function Create(request: Serenity.SaveRequest<OfertaRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Update(request: Serenity.SaveRequest<OfertaRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<OfertaRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<OfertaRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        namespace Methods {
+            const Create: string;
+            const Update: string;
+            const Delete: string;
+            const Retrieve: string;
+            const List: string;
+        }
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
     class OpinionForm extends Serenity.PrefixedContext {
         static formKey: string;
     }
@@ -1040,6 +1251,140 @@ declare namespace AdmWebASCATUR.Ascatur {
         function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<OpinionRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<OpinionRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        namespace Methods {
+            const Create: string;
+            const Update: string;
+            const Delete: string;
+            const Retrieve: string;
+            const List: string;
+        }
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class ProductoForm extends Serenity.PrefixedContext {
+        static formKey: string;
+    }
+    interface ProductoForm {
+        IdComercio: Serenity.IntegerEditor;
+        Nombre: Serenity.StringEditor;
+        Detalle: Serenity.StringEditor;
+        Precio: Serenity.DecimalEditor;
+        Cantidad: Serenity.DecimalEditor;
+        FechaIngreso: Serenity.DateEditor;
+        ImagenPrimaria: Serenity.StringEditor;
+        GaleriaImagenes: Serenity.StringEditor;
+        DetalleIngles: Serenity.StringEditor;
+        PrecioIngles: Serenity.DecimalEditor;
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    interface ProductoRow {
+        Id?: number;
+        IdComercio?: number;
+        Nombre?: string;
+        Detalle?: string;
+        Precio?: number;
+        Cantidad?: number;
+        FechaIngreso?: string;
+        ImagenPrimaria?: string;
+        GaleriaImagenes?: string;
+        DetalleIngles?: string;
+        PrecioIngles?: number;
+    }
+    namespace ProductoRow {
+        const idProperty = "Id";
+        const nameProperty = "Nombre";
+        const localTextPrefix = "Ascatur.Producto";
+        namespace Fields {
+            const Id: any;
+            const IdComercio: any;
+            const Nombre: any;
+            const Detalle: any;
+            const Precio: any;
+            const Cantidad: any;
+            const FechaIngreso: any;
+            const ImagenPrimaria: any;
+            const GaleriaImagenes: any;
+            const DetalleIngles: any;
+            const PrecioIngles: any;
+        }
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    namespace ProductoService {
+        const baseUrl = "Ascatur/Producto";
+        function Create(request: Serenity.SaveRequest<ProductoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Update(request: Serenity.SaveRequest<ProductoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ProductoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ProductoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        namespace Methods {
+            const Create: string;
+            const Update: string;
+            const Delete: string;
+            const Retrieve: string;
+            const List: string;
+        }
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    class ServicioForm extends Serenity.PrefixedContext {
+        static formKey: string;
+    }
+    interface ServicioForm {
+        IdComercio: Serenity.IntegerEditor;
+        Nombre: Serenity.StringEditor;
+        Detalle: Serenity.StringEditor;
+        Precio: Serenity.DecimalEditor;
+        Cantidad: Serenity.DecimalEditor;
+        FechaIngreso: Serenity.DateEditor;
+        ImagenPrimaria: Serenity.StringEditor;
+        GaleriaImagenes: Serenity.StringEditor;
+        DetalleIngles: Serenity.StringEditor;
+        PrecioIngles: Serenity.DecimalEditor;
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    interface ServicioRow {
+        Id?: number;
+        IdComercio?: number;
+        Nombre?: string;
+        Detalle?: string;
+        Precio?: number;
+        Cantidad?: number;
+        FechaIngreso?: string;
+        ImagenPrimaria?: string;
+        GaleriaImagenes?: string;
+        DetalleIngles?: string;
+        PrecioIngles?: number;
+    }
+    namespace ServicioRow {
+        const idProperty = "Id";
+        const nameProperty = "Nombre";
+        const localTextPrefix = "Ascatur.Servicio";
+        namespace Fields {
+            const Id: any;
+            const IdComercio: any;
+            const Nombre: any;
+            const Detalle: any;
+            const Precio: any;
+            const Cantidad: any;
+            const FechaIngreso: any;
+            const ImagenPrimaria: any;
+            const GaleriaImagenes: any;
+            const DetalleIngles: any;
+            const PrecioIngles: any;
+        }
+    }
+}
+declare namespace AdmWebASCATUR.Ascatur {
+    namespace ServicioService {
+        const baseUrl = "Ascatur/Servicio";
+        function Create(request: Serenity.SaveRequest<ServicioRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Update(request: Serenity.SaveRequest<ServicioRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ServicioRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ServicioRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         namespace Methods {
             const Create: string;
             const Update: string;

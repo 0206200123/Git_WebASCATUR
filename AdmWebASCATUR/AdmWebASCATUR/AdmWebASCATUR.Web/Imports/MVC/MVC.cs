@@ -41,9 +41,29 @@ namespace MVC
                 public const string ComercioIndex = "~/Modules/Ascatur/Comercio/ComercioIndex.cshtml";
             }
 
+            public static class Eventos
+            {
+                public const string EventosIndex = "~/Modules/Ascatur/Eventos/EventosIndex.cshtml";
+            }
+
+            public static class Oferta
+            {
+                public const string OfertaIndex = "~/Modules/Ascatur/Oferta/OfertaIndex.cshtml";
+            }
+
             public static class Opinion
             {
                 public const string OpinionIndex = "~/Modules/Ascatur/Opinion/OpinionIndex.cshtml";
+            }
+
+            public static class Producto
+            {
+                public const string ProductoIndex = "~/Modules/Ascatur/Producto/ProductoIndex.cshtml";
+            }
+
+            public static class Servicio
+            {
+                public const string ServicioIndex = "~/Modules/Ascatur/Servicio/ServicioIndex.cshtml";
             }
 
         }

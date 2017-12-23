@@ -1340,6 +1340,100 @@ var AdmWebASCATUR;
 (function (AdmWebASCATUR) {
     var Ascatur;
     (function (Ascatur) {
+        var ServicioDialog = /** @class */ (function (_super) {
+            __extends(ServicioDialog, _super);
+            function ServicioDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new Ascatur.ServicioForm(_this.idPrefix);
+                return _this;
+            }
+            ServicioDialog.prototype.getFormKey = function () { return Ascatur.ServicioForm.formKey; };
+            ServicioDialog.prototype.getIdProperty = function () { return Ascatur.ServicioRow.idProperty; };
+            ServicioDialog.prototype.getLocalTextPrefix = function () { return Ascatur.ServicioRow.localTextPrefix; };
+            ServicioDialog.prototype.getNameProperty = function () { return Ascatur.ServicioRow.nameProperty; };
+            ServicioDialog.prototype.getService = function () { return Ascatur.ServicioService.baseUrl; };
+            ServicioDialog = __decorate([
+                Serenity.Decorators.registerClass(),
+                Serenity.Decorators.responsive()
+            ], ServicioDialog);
+            return ServicioDialog;
+        }(Serenity.EntityDialog));
+        Ascatur.ServicioDialog = ServicioDialog;
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var ServicioGrid = /** @class */ (function (_super) {
+            __extends(ServicioGrid, _super);
+            function ServicioGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            ServicioGrid.prototype.getColumnsKey = function () { return 'Ascatur.Servicio'; };
+            ServicioGrid.prototype.getDialogType = function () { return Ascatur.ServicioDialog; };
+            ServicioGrid.prototype.getIdProperty = function () { return Ascatur.ServicioRow.idProperty; };
+            ServicioGrid.prototype.getLocalTextPrefix = function () { return Ascatur.ServicioRow.localTextPrefix; };
+            ServicioGrid.prototype.getService = function () { return Ascatur.ServicioService.baseUrl; };
+            ServicioGrid = __decorate([
+                Serenity.Decorators.registerClass()
+            ], ServicioGrid);
+            return ServicioGrid;
+        }(Serenity.EntityGrid));
+        Ascatur.ServicioGrid = ServicioGrid;
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var ProductoDialog = /** @class */ (function (_super) {
+            __extends(ProductoDialog, _super);
+            function ProductoDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new Ascatur.ProductoForm(_this.idPrefix);
+                return _this;
+            }
+            ProductoDialog.prototype.getFormKey = function () { return Ascatur.ProductoForm.formKey; };
+            ProductoDialog.prototype.getIdProperty = function () { return Ascatur.ProductoRow.idProperty; };
+            ProductoDialog.prototype.getLocalTextPrefix = function () { return Ascatur.ProductoRow.localTextPrefix; };
+            ProductoDialog.prototype.getNameProperty = function () { return Ascatur.ProductoRow.nameProperty; };
+            ProductoDialog.prototype.getService = function () { return Ascatur.ProductoService.baseUrl; };
+            ProductoDialog = __decorate([
+                Serenity.Decorators.registerClass(),
+                Serenity.Decorators.responsive()
+            ], ProductoDialog);
+            return ProductoDialog;
+        }(Serenity.EntityDialog));
+        Ascatur.ProductoDialog = ProductoDialog;
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var ProductoGrid = /** @class */ (function (_super) {
+            __extends(ProductoGrid, _super);
+            function ProductoGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            ProductoGrid.prototype.getColumnsKey = function () { return 'Ascatur.Producto'; };
+            ProductoGrid.prototype.getDialogType = function () { return Ascatur.ProductoDialog; };
+            ProductoGrid.prototype.getIdProperty = function () { return Ascatur.ProductoRow.idProperty; };
+            ProductoGrid.prototype.getLocalTextPrefix = function () { return Ascatur.ProductoRow.localTextPrefix; };
+            ProductoGrid.prototype.getService = function () { return Ascatur.ProductoService.baseUrl; };
+            ProductoGrid = __decorate([
+                Serenity.Decorators.registerClass()
+            ], ProductoGrid);
+            return ProductoGrid;
+        }(Serenity.EntityGrid));
+        Ascatur.ProductoGrid = ProductoGrid;
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
         var OpinionDialog = /** @class */ (function (_super) {
             __extends(OpinionDialog, _super);
             function OpinionDialog() {
@@ -1381,6 +1475,100 @@ var AdmWebASCATUR;
             return OpinionGrid;
         }(Serenity.EntityGrid));
         Ascatur.OpinionGrid = OpinionGrid;
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var OfertaDialog = /** @class */ (function (_super) {
+            __extends(OfertaDialog, _super);
+            function OfertaDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new Ascatur.OfertaForm(_this.idPrefix);
+                return _this;
+            }
+            OfertaDialog.prototype.getFormKey = function () { return Ascatur.OfertaForm.formKey; };
+            OfertaDialog.prototype.getIdProperty = function () { return Ascatur.OfertaRow.idProperty; };
+            OfertaDialog.prototype.getLocalTextPrefix = function () { return Ascatur.OfertaRow.localTextPrefix; };
+            OfertaDialog.prototype.getNameProperty = function () { return Ascatur.OfertaRow.nameProperty; };
+            OfertaDialog.prototype.getService = function () { return Ascatur.OfertaService.baseUrl; };
+            OfertaDialog = __decorate([
+                Serenity.Decorators.registerClass(),
+                Serenity.Decorators.responsive()
+            ], OfertaDialog);
+            return OfertaDialog;
+        }(Serenity.EntityDialog));
+        Ascatur.OfertaDialog = OfertaDialog;
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var OfertaGrid = /** @class */ (function (_super) {
+            __extends(OfertaGrid, _super);
+            function OfertaGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            OfertaGrid.prototype.getColumnsKey = function () { return 'Ascatur.Oferta'; };
+            OfertaGrid.prototype.getDialogType = function () { return Ascatur.OfertaDialog; };
+            OfertaGrid.prototype.getIdProperty = function () { return Ascatur.OfertaRow.idProperty; };
+            OfertaGrid.prototype.getLocalTextPrefix = function () { return Ascatur.OfertaRow.localTextPrefix; };
+            OfertaGrid.prototype.getService = function () { return Ascatur.OfertaService.baseUrl; };
+            OfertaGrid = __decorate([
+                Serenity.Decorators.registerClass()
+            ], OfertaGrid);
+            return OfertaGrid;
+        }(Serenity.EntityGrid));
+        Ascatur.OfertaGrid = OfertaGrid;
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var EventosDialog = /** @class */ (function (_super) {
+            __extends(EventosDialog, _super);
+            function EventosDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new Ascatur.EventosForm(_this.idPrefix);
+                return _this;
+            }
+            EventosDialog.prototype.getFormKey = function () { return Ascatur.EventosForm.formKey; };
+            EventosDialog.prototype.getIdProperty = function () { return Ascatur.EventosRow.idProperty; };
+            EventosDialog.prototype.getLocalTextPrefix = function () { return Ascatur.EventosRow.localTextPrefix; };
+            EventosDialog.prototype.getNameProperty = function () { return Ascatur.EventosRow.nameProperty; };
+            EventosDialog.prototype.getService = function () { return Ascatur.EventosService.baseUrl; };
+            EventosDialog = __decorate([
+                Serenity.Decorators.registerClass(),
+                Serenity.Decorators.responsive()
+            ], EventosDialog);
+            return EventosDialog;
+        }(Serenity.EntityDialog));
+        Ascatur.EventosDialog = EventosDialog;
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var EventosGrid = /** @class */ (function (_super) {
+            __extends(EventosGrid, _super);
+            function EventosGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            EventosGrid.prototype.getColumnsKey = function () { return 'Ascatur.Eventos'; };
+            EventosGrid.prototype.getDialogType = function () { return Ascatur.EventosDialog; };
+            EventosGrid.prototype.getIdProperty = function () { return Ascatur.EventosRow.idProperty; };
+            EventosGrid.prototype.getLocalTextPrefix = function () { return Ascatur.EventosRow.localTextPrefix; };
+            EventosGrid.prototype.getService = function () { return Ascatur.EventosService.baseUrl; };
+            EventosGrid = __decorate([
+                Serenity.Decorators.registerClass()
+            ], EventosGrid);
+            return EventosGrid;
+        }(Serenity.EntityGrid));
+        Ascatur.EventosGrid = EventosGrid;
     })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
 })(AdmWebASCATUR || (AdmWebASCATUR = {}));
 var AdmWebASCATUR;
@@ -2929,6 +3117,176 @@ var AdmWebASCATUR;
 (function (AdmWebASCATUR) {
     var Ascatur;
     (function (Ascatur) {
+        var EventosForm = /** @class */ (function (_super) {
+            __extends(EventosForm, _super);
+            function EventosForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            EventosForm.formKey = 'Ascatur.Eventos';
+            return EventosForm;
+        }(Serenity.PrefixedContext));
+        Ascatur.EventosForm = EventosForm;
+        [,
+            ['IdComercio', function () { return Serenity.IntegerEditor; }],
+            ['Nombre', function () { return Serenity.StringEditor; }],
+            ['Detalle', function () { return Serenity.StringEditor; }],
+            ['FechaRealizar', function () { return Serenity.DateEditor; }],
+            ['Hora', function () { return Serenity.StringEditor; }],
+            ['FechaIngreso', function () { return Serenity.DateEditor; }],
+            ['ImagenPrimaria', function () { return Serenity.StringEditor; }],
+            ['GaleriaImagenes', function () { return Serenity.StringEditor; }],
+            ['DetalleIngles', function () { return Serenity.StringEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(EventosForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var EventosRow;
+        (function (EventosRow) {
+            EventosRow.idProperty = 'Id';
+            EventosRow.nameProperty = 'Nombre';
+            EventosRow.localTextPrefix = 'Ascatur.Eventos';
+            var Fields;
+            (function (Fields) {
+            })(Fields = EventosRow.Fields || (EventosRow.Fields = {}));
+            [
+                'Id',
+                'IdComercio',
+                'Nombre',
+                'Detalle',
+                'FechaRealizar',
+                'Hora',
+                'FechaIngreso',
+                'ImagenPrimaria',
+                'GaleriaImagenes',
+                'DetalleIngles'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(EventosRow = Ascatur.EventosRow || (Ascatur.EventosRow = {}));
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var EventosService;
+        (function (EventosService) {
+            EventosService.baseUrl = 'Ascatur/Eventos';
+            var Methods;
+            (function (Methods) {
+            })(Methods = EventosService.Methods || (EventosService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                EventosService[x] = function (r, s, o) {
+                    return Q.serviceRequest(EventosService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = EventosService.baseUrl + '/' + x;
+            });
+        })(EventosService = Ascatur.EventosService || (Ascatur.EventosService = {}));
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var OfertaForm = /** @class */ (function (_super) {
+            __extends(OfertaForm, _super);
+            function OfertaForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            OfertaForm.formKey = 'Ascatur.Oferta';
+            return OfertaForm;
+        }(Serenity.PrefixedContext));
+        Ascatur.OfertaForm = OfertaForm;
+        [,
+            ['IdComercio', function () { return Serenity.IntegerEditor; }],
+            ['Nombre', function () { return Serenity.StringEditor; }],
+            ['Detalle', function () { return Serenity.StringEditor; }],
+            ['Precio', function () { return Serenity.DecimalEditor; }],
+            ['Cantidad', function () { return Serenity.DecimalEditor; }],
+            ['FechaIngreso', function () { return Serenity.DateEditor; }],
+            ['ImagenPrimaria', function () { return Serenity.StringEditor; }],
+            ['GaleriaImagenes', function () { return Serenity.StringEditor; }],
+            ['DetalleIngles', function () { return Serenity.StringEditor; }],
+            ['PrecioIngles', function () { return Serenity.DecimalEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(OfertaForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var OfertaRow;
+        (function (OfertaRow) {
+            OfertaRow.idProperty = 'Id';
+            OfertaRow.nameProperty = 'Nombre';
+            OfertaRow.localTextPrefix = 'Ascatur.Oferta';
+            var Fields;
+            (function (Fields) {
+            })(Fields = OfertaRow.Fields || (OfertaRow.Fields = {}));
+            [
+                'Id',
+                'IdComercio',
+                'Nombre',
+                'Detalle',
+                'Precio',
+                'Cantidad',
+                'FechaIngreso',
+                'ImagenPrimaria',
+                'GaleriaImagenes',
+                'DetalleIngles',
+                'PrecioIngles'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(OfertaRow = Ascatur.OfertaRow || (Ascatur.OfertaRow = {}));
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var OfertaService;
+        (function (OfertaService) {
+            OfertaService.baseUrl = 'Ascatur/Oferta';
+            var Methods;
+            (function (Methods) {
+            })(Methods = OfertaService.Methods || (OfertaService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                OfertaService[x] = function (r, s, o) {
+                    return Q.serviceRequest(OfertaService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = OfertaService.baseUrl + '/' + x;
+            });
+        })(OfertaService = Ascatur.OfertaService || (Ascatur.OfertaService = {}));
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
         var OpinionForm = /** @class */ (function (_super) {
             __extends(OpinionForm, _super);
             function OpinionForm() {
@@ -2997,6 +3355,178 @@ var AdmWebASCATUR;
                 Methods[x] = OpinionService.baseUrl + '/' + x;
             });
         })(OpinionService = Ascatur.OpinionService || (Ascatur.OpinionService = {}));
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var ProductoForm = /** @class */ (function (_super) {
+            __extends(ProductoForm, _super);
+            function ProductoForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            ProductoForm.formKey = 'Ascatur.Producto';
+            return ProductoForm;
+        }(Serenity.PrefixedContext));
+        Ascatur.ProductoForm = ProductoForm;
+        [,
+            ['IdComercio', function () { return Serenity.IntegerEditor; }],
+            ['Nombre', function () { return Serenity.StringEditor; }],
+            ['Detalle', function () { return Serenity.StringEditor; }],
+            ['Precio', function () { return Serenity.DecimalEditor; }],
+            ['Cantidad', function () { return Serenity.DecimalEditor; }],
+            ['FechaIngreso', function () { return Serenity.DateEditor; }],
+            ['ImagenPrimaria', function () { return Serenity.StringEditor; }],
+            ['GaleriaImagenes', function () { return Serenity.StringEditor; }],
+            ['DetalleIngles', function () { return Serenity.StringEditor; }],
+            ['PrecioIngles', function () { return Serenity.DecimalEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(ProductoForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var ProductoRow;
+        (function (ProductoRow) {
+            ProductoRow.idProperty = 'Id';
+            ProductoRow.nameProperty = 'Nombre';
+            ProductoRow.localTextPrefix = 'Ascatur.Producto';
+            var Fields;
+            (function (Fields) {
+            })(Fields = ProductoRow.Fields || (ProductoRow.Fields = {}));
+            [
+                'Id',
+                'IdComercio',
+                'Nombre',
+                'Detalle',
+                'Precio',
+                'Cantidad',
+                'FechaIngreso',
+                'ImagenPrimaria',
+                'GaleriaImagenes',
+                'DetalleIngles',
+                'PrecioIngles'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(ProductoRow = Ascatur.ProductoRow || (Ascatur.ProductoRow = {}));
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var ProductoService;
+        (function (ProductoService) {
+            ProductoService.baseUrl = 'Ascatur/Producto';
+            var Methods;
+            (function (Methods) {
+            })(Methods = ProductoService.Methods || (ProductoService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                ProductoService[x] = function (r, s, o) {
+                    return Q.serviceRequest(ProductoService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = ProductoService.baseUrl + '/' + x;
+            });
+        })(ProductoService = Ascatur.ProductoService || (Ascatur.ProductoService = {}));
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var ServicioForm = /** @class */ (function (_super) {
+            __extends(ServicioForm, _super);
+            function ServicioForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            ServicioForm.formKey = 'Ascatur.Servicio';
+            return ServicioForm;
+        }(Serenity.PrefixedContext));
+        Ascatur.ServicioForm = ServicioForm;
+        [,
+            ['IdComercio', function () { return Serenity.IntegerEditor; }],
+            ['Nombre', function () { return Serenity.StringEditor; }],
+            ['Detalle', function () { return Serenity.StringEditor; }],
+            ['Precio', function () { return Serenity.DecimalEditor; }],
+            ['Cantidad', function () { return Serenity.DecimalEditor; }],
+            ['FechaIngreso', function () { return Serenity.DateEditor; }],
+            ['ImagenPrimaria', function () { return Serenity.StringEditor; }],
+            ['GaleriaImagenes', function () { return Serenity.StringEditor; }],
+            ['DetalleIngles', function () { return Serenity.StringEditor; }],
+            ['PrecioIngles', function () { return Serenity.DecimalEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(ServicioForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var ServicioRow;
+        (function (ServicioRow) {
+            ServicioRow.idProperty = 'Id';
+            ServicioRow.nameProperty = 'Nombre';
+            ServicioRow.localTextPrefix = 'Ascatur.Servicio';
+            var Fields;
+            (function (Fields) {
+            })(Fields = ServicioRow.Fields || (ServicioRow.Fields = {}));
+            [
+                'Id',
+                'IdComercio',
+                'Nombre',
+                'Detalle',
+                'Precio',
+                'Cantidad',
+                'FechaIngreso',
+                'ImagenPrimaria',
+                'GaleriaImagenes',
+                'DetalleIngles',
+                'PrecioIngles'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(ServicioRow = Ascatur.ServicioRow || (Ascatur.ServicioRow = {}));
+    })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
+})(AdmWebASCATUR || (AdmWebASCATUR = {}));
+var AdmWebASCATUR;
+(function (AdmWebASCATUR) {
+    var Ascatur;
+    (function (Ascatur) {
+        var ServicioService;
+        (function (ServicioService) {
+            ServicioService.baseUrl = 'Ascatur/Servicio';
+            var Methods;
+            (function (Methods) {
+            })(Methods = ServicioService.Methods || (ServicioService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                ServicioService[x] = function (r, s, o) {
+                    return Q.serviceRequest(ServicioService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = ServicioService.baseUrl + '/' + x;
+            });
+        })(ServicioService = Ascatur.ServicioService || (Ascatur.ServicioService = {}));
     })(Ascatur = AdmWebASCATUR.Ascatur || (AdmWebASCATUR.Ascatur = {}));
 })(AdmWebASCATUR || (AdmWebASCATUR = {}));
 var AdmWebASCATUR;
