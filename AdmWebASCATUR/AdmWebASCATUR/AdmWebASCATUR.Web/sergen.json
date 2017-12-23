@@ -12,6 +12,12 @@
           "Identifier": "Comercio",
           "Module": "Ascatur",
           "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Opinion",
+          "Identifier": "Opinion",
+          "Module": "Ascatur",
+          "PermissionKey": "Administration:General"
         }
       ]
     }

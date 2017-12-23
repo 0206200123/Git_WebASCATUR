@@ -7,6 +7,7 @@ using MyPages = AdmWebASCATUR.Ascatur.Pages;
 
 [assembly: NavigationMenu(2000, "Ascatur", icon: "fa-bars")]
 [assembly: NavigationLink(2100, "Ascatur/Comercio", typeof(MyPages.ComercioController), icon: "fa-book")]
+[assembly: NavigationLink(2200, "Ascatur/Opinion", typeof(MyPages.OpinionController), icon: "fa-comments")]
 
 [assembly: NavigationMenu(9000, "Administration", icon: "fa-desktop")]
 [assembly: NavigationLink(9100, "Administration/Languages", typeof(Administration.LanguageController), icon: "fa-comments")]

@@ -41,6 +41,11 @@ namespace MVC
                 public const string ComercioIndex = "~/Modules/Ascatur/Comercio/ComercioIndex.cshtml";
             }
 
+            public static class Opinion
+            {
+                public const string OpinionIndex = "~/Modules/Ascatur/Opinion/OpinionIndex.cshtml";
+            }
+
         }
 
         public static class Common

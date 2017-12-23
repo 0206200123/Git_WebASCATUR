@@ -45,7 +45,10 @@ namespace AdmWebASCATUR.Administration.Entities
             get { return Fields.RoleName; }
         }
 
-        public Int32Field IdComercioField => throw new NotImplementedException();
+        public Int32Field IdComercioField
+        {
+            get { return Fields.Id_Comercio; }
+        }
 
         public static readonly RowFields Fields = new RowFields().Init();
 
