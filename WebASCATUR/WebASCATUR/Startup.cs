@@ -24,7 +24,7 @@ namespace WebASCATUR
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            var connection = @"Server=MANUEL\SQLEXPRESS;Database=AdmWebASCATUR_Default_v1;Trusted_Connection=True;";
+            var connection = @"Server=MANUEL\SQLEXPRESS;Database=AdmWebASCATUR_Default_v1;User Id=Emilio;Password=Ema2Vargas$;";
             services.AddDbContext<AdmWebASCATUR_Default_v1Context>(options => options.UseSqlServer(connection));
 
         }

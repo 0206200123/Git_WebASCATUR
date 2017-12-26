@@ -1,0 +1,53 @@
+{
+  "RootNamespace": "AdmWebASCATUR",
+  "ServerTypings": {
+    "Assemblies": []
+  },
+  "Connections": [
+    {
+      "Key": "ASCATUR",
+      "Tables": [
+        {
+          "Tablename": "dbo.Comercio",
+          "Identifier": "Comercio",
+          "Module": "Ascatur",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Eventos",
+          "Identifier": "Eventos",
+          "Module": "Ascatur",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Oferta",
+          "Identifier": "Oferta",
+          "Module": "Ascatur",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Opinion",
+          "Identifier": "Opinion",
+          "Module": "Ascatur",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Producto",
+          "Identifier": "Producto",
+          "Module": "Ascatur",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Servicio",
+          "Identifier": "Servicio",
+          "Module": "Ascatur",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "BaseRowClasses": [],
+  "RemoveForeignFields": [],
+  "CustomGenerate": {},
+  "CustomSettings": {}
+}
