@@ -1,106 +1,132 @@
-﻿using System;
+﻿using WebASCATUR.Data;
+using WebASCATUR.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebASCATUR.Models;
-using WebASCATUR.ViewModels;
+using WebASCATUR.Data.Interfaces;
 
 namespace WebASCATUR.Controllers
 {
     public class DefaultController : Controller
     {
-        private readonly AdmWebASCATUR_Default_v1Context _context;
+        private readonly IServicioRepository _servicioRepository;
+        private readonly IOpinionRepository _opinionRepository;
+        private readonly IEventoRepository _eventoRepository;
+        private readonly IProductoRepository _productoRepository;
+        private readonly IOfertaRepository _ofertaRepository;
 
-        public DefaultController(AdmWebASCATUR_Default_v1Context context)
+
+        public DefaultController(IServicioRepository servicioRepository, IOpinionRepository opinionRepository, 
+                               IEventoRepository eventoRepository, IProductoRepository productoRepository, IOfertaRepository ofertaRepository)
         {
-            _context = context;
+            _servicioRepository = servicioRepository;
+            _opinionRepository = opinionRepository;
+            _eventoRepository = eventoRepository;
+            _productoRepository = productoRepository;
+            _ofertaRepository = ofertaRepository;
         }
         // GET: Default
-        public ActionResult Index()
+        public ViewResult Index()
         {
-            OpinionListViewModel vm = new OpinionListViewModel();
-            vm.Message = "Hello from DefaultController.Index()";
-            vm.Opiniones = _context.Opinion.ToList();
+            //var homeViewModel = new HomeViewModel;
+            //vm.Message = "Hello from DefaultController.Index()";
+            //vm.RandomOpiniones.Opiniones = _context.Opinion.ToList();
+            //vm.RandomProductos.Productos = _context.Producto.ToList();
+            //vm.RandomServicios.Servicios = _context.Servicio.ToList();
+            //vm.RandomEventos.Eventos = _context.Eventos.ToList();
+            //vm.RandomOfertas.Ofertas = _context.Oferta.ToList();
 
-            return View(vm);
+            var homeViewModel = new HomeViewModel
+            {
+                aleatorioServicios = _servicioRepository.aleatorioServicios,
+                aleatorioOpiniones = _opinionRepository.aleatorioOpiniones,
+                aleatorioEventos = _eventoRepository.aleatorioEventos,
+                aleatorioProductos = _productoRepository.aleatorioProductos,
+                aleatorioOfertas = _ofertaRepository.aleatorioOfertas
+
+
+            };
+
+            return View(homeViewModel);
           
         }
 
-        // GET: Default/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+        //// GET: Default/Details/5
+        //public ActionResult Details(int id)
+        //{
+        //    return View();
+        //}
 
-        // GET: Default/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+        //// GET: Default/Create
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
 
-        // POST: Default/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
+        //// POST: Default/Create
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add insert logic here
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
-        // GET: Default/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        //// GET: Default/Edit/5
+        //public ActionResult Edit(int id)
+        //{
+        //    return View();
+        //}
 
-        // POST: Default/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
+        //// POST: Default/Edit/5
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Edit(int id, IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add update logic here
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
-        // GET: Default/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //// GET: Default/Delete/5
+        //public ActionResult Delete(int id)
+        //{
+        //    return View();
+        //}
 
-        // POST: Default/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
+        //// POST: Default/Delete/5
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Delete(int id, IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add delete logic here
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
     }
 }

@@ -1,0 +1,21 @@
+﻿
+@using Microsoft.Extensions.Options;
+@using WebASCATUR.Configuration;
+@using WebASCATUR.Data.Models;
+
+@inject IOptions<ApplicationConfigurations> OptionsApplicationConfiguration
+
+@model  WebASCATUR.ViewModels.HomeViewModel
+
+@foreach (var oferta in Model.aleatorioOfertas)
+{
+    <div class="col-sm-4 sm-margin-b-50">
+        <div class="margin-b-20">
+            <img class="img-responsive wow fadeInDown" src="@(OptionsApplicationConfiguration.Value.PathImage + oferta.ImagenPrimaria)" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s" data-wow-iteration="2">
+        </div>
+        <h4><a href="#">@oferta.Nombre</a></h4>
+        <p>@oferta.Detalle</p>
+        <a class="link" href="#">Ver mas detalle</a>
+    </div>
+
+}

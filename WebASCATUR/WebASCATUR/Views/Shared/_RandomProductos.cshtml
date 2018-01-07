@@ -1,0 +1,52 @@
+﻿@using Microsoft.Extensions.Options;
+@using WebASCATUR.Configuration;
+@using WebASCATUR.Data.Models;
+
+@inject IOptions<ApplicationConfigurations> OptionsApplicationConfiguration
+
+@model  WebASCATUR.ViewModels.HomeViewModel
+
+@foreach (var producto in Model.aleatorioProductos)
+{
+    <div class="col-sm-4 sm-margin-b-50">
+        <div class="margin-b-20">
+            <img class="img-responsive wow fadeInLeft" src="@(OptionsApplicationConfiguration.Value.PathImage + producto.ImagenPrimaria)" alt="Producto" data-wow-duration=".3" data-wow-delay=".2s" data-wow-iteration="2">
+        </div>
+        <h4><a href="#">@producto.Nombre</a></h4>
+        <p>@producto.Detalle</p>
+        <a class="link" href="#">Read More</a>
+    </div>
+
+      <!-- Latest Products -->
+    @*<div class="col-sm-4 sm-margin-b-50">
+        <div class="margin-b-20">
+            <img class="img-responsive wow fadeInLeft" src="~/img/Imagenes_descargadas/productos1.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s" data-wow-iteration="2">
+        </div>
+        <h4><a href="#">Artesanias</a> <span class="text-uppercase margin-l-20">Souvenir</span></h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+        <a class="link" href="#">Read More</a>
+    </div>
+                <!-- End Latest Products -->
+                <!-- Latest Products -->
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <img class="img-responsive wow fadeInUp" src="~/img/Imagenes_descargadas/comercio.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".1s" data-wow-iteration="2">
+                    </div>
+                    <h4><a href="#">Comercio</a> <span class="text-uppercase margin-l-20">Rural</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                    <a class="link" href="#">Read More</a>
+                </div>
+                <!-- End Latest Products -->
+                <!-- Latest Products -->
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <img class="img-responsive wow fadeInRight" src="~/img/Imagenes_descargadas/Gastronomia.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".3s" data-wow-iteration="2">
+                    </div>
+                    <h4><a href="#">Comidas</a> <span class="text-uppercase margin-l-20">Gastronomia</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                    <a class="link" href="#">Read More</a>
+                </div>
+
+
+                <!-- End Latest Products -->*@
+}

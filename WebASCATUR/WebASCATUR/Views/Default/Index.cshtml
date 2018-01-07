@@ -1,4 +1,4 @@
-﻿@model WebASCATUR.ViewModels.OpinionListViewModel
+﻿@model WebASCATUR.ViewModels.HomeViewModel
 
 @{
   ViewData["Title"] = "Index";
@@ -76,6 +76,31 @@
             <!--// end row -->
         </div>
     </div>
+   <!-- Ofertas-->
+       <div id="ofertas">
+        <div class="container content-lg">
+            <div class="row text-center margin-b-40">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h2>Ofertas</h2>
+                    <p>Ofrecemos las mejores ofertas de la comunidad</p>
+                </div>
+            </div>
+            <!--// end row -->
+
+            <div class="row">
+                <!-- Latest Ofertas-->
+                @Html.Partial("_RandomOfertas", Model)
+
+
+
+                <!-- End Latest Ofertas---->
+            </div>
+            <!--// end row -->
+            <a class="bottom" href="#">Ver todos..</a>
+        </div>
+
+
+    </div>
     <!-- Servicios -->
     <div id="services">
         <div class="container content-lg">
@@ -89,7 +114,8 @@
 
             <div class="row">
                 <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
+                @Html.Partial("_RandomServicios", Model)
+                @*<div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <img class="img-responsive wow fadeInUp" src="~/img/970x647/talleres.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s" data-wow-iteration="2">
                     </div>
@@ -116,7 +142,7 @@
                     <h4><a href="#">Hospedajes</a> <span class="text-uppercase margin-l-20">Hoteleria</span></h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
                     <a class="link" href="#">Read More</a>
-                </div>
+                </div>*@
 
 
                 <!-- End Latest Products -->
@@ -150,7 +176,8 @@
             <!-- Masonry Grid -->
             <div class="masonry-grid row row-space-2">
                 <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-4">
+                @Html.Partial("_RandomEventos", Model)
+                @*<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
                     <!-- Work -->
                     <div class="work work-popup-trigger">
                         <div class="work-overlay">
@@ -228,7 +255,7 @@
                     </div>
                     <!-- End Work -->
                 </div>
-                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
+                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
                     <!-- Work -->
                     <div class="work work-popup-trigger">
                         <div class="work-overlay">
@@ -267,7 +294,7 @@
                     </div>
                     <!-- End Work -->
                 </div>
-                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
+                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
                     <!-- Work -->
                     <!-- Work -->
                     <div class="work work-popup-trigger">
@@ -307,7 +334,7 @@
                     </div>
                     <!-- End Work -->
                 </div>
-                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
                     <!-- Work -->
                     <div class="work work-popup-trigger">
                         <div class="work-overlay">
@@ -345,7 +372,7 @@
                         </div>
                     </div>
                     <!-- End Work -->
-                </div>
+                </div>*@
             </div>
             <!-- End Masonry Grid -->
         </div>
@@ -363,7 +390,8 @@
             <!--// end row -->
 
             <div class="row">
-                <!-- Latest Products -->
+                @Html.Partial("_RandomProductos", Model)
+                @*<!-- Latest Products -->
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <img class="img-responsive wow fadeInLeft" src="~/img/Imagenes_descargadas/productos1.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s" data-wow-iteration="2">
@@ -394,7 +422,7 @@
                 </div>
 
 
-                <!-- End Latest Products -->
+                <!-- End Latest Products -->*@
             </div>
             <!--// end row -->
             <a class="bottom" href="#">Ver todos..</a>
@@ -413,7 +441,7 @@
                 <div class="swiper-slider swiper-testimonials">
                     <!-- Swiper Wrapper -->
                     <div class="swiper-wrapper">
-                        @Html.Partial("_ListaOpiniones",Model)
+                        @Html.Partial("_RandomOpiniones",Model)
                     </div>
                     <!-- End Swiper Wrapper -->
                     <!-- Pagination -->

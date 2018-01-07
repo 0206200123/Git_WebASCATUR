@@ -1,0 +1,20 @@
+﻿@model WebASCATUR.ViewModels.HomeViewModel
+
+@{
+    //ViewData["Title"] = "Index";
+    Layout = null;
+}
+
+
+@foreach (var opinion in Model.aleatorioOpiniones)
+{
+    <div class="swiper-slide">
+    <blockquote class="blockquote">
+        <div class="margin-b-20">
+            @opinion.Detalle
+        </div>
+       
+        <p><span class="fweight-700 color-link">@opinion.NombreUsuario</span>, Metronic Customer</p>
+    </blockquote>
+    </div>
+}
