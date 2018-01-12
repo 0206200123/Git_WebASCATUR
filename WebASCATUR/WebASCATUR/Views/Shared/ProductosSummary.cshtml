@@ -1,0 +1,26 @@
+﻿@using Microsoft.Extensions.Options;
+@using WebASCATUR.Configuration;
+@using WebASCATUR.Data.Models;
+
+@inject IOptions<ApplicationConfigurations> OptionsApplicationConfiguration
+
+@model Producto
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img src="@(OptionsApplicationConfiguration.Value.PathImage + Model.ImagenPrimaria)" alt="" />
+        <div class="caption">
+            <h3 class="pull-right">@Model.Precio</h3>
+            <h3>
+                <a asp-controller="Producto" asp-action="Detalle" asp-route-drinkId="@Model.Id">@Model.Nombre</a>
+            </h3>
+            <p>@Model.Detalle</p>
+        </div>
+        @*<div class="addToCart text-right">
+            <p class="button ">
+                <a class="btn btn-success" id="cartButton" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-drinkId="@Model.DrinkId">
+                    Add to cart
+                </a>
+            </p>
+        </div>*@
+    </div>
+</div>

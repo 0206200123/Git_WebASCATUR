@@ -17,7 +17,7 @@ namespace WebASCATUR.Data.Repositories
             _appDbContext = appDbContext;
         }
 
-        //public IEnumerable<Servicio> Drinks => _appDbContext.Servicio.Include(c => c.Category);
+        public IEnumerable<Eventos> eventos => _appDbContext.Eventos;
 
         public IEnumerable<Eventos> aleatorioEventos => _appDbContext.Eventos.OrderBy(x => Guid.NewGuid()).Take(5);
 

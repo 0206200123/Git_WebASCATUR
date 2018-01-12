@@ -1,0 +1,7 @@
+﻿@model OfertasListViewModel
+<div class="row marginTop">
+    @foreach (var oferta in Model.Ofertas)
+    {
+        @Html.Partial("OfertasSummary", oferta)
+    }
+</div>

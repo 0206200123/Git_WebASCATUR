@@ -9,7 +9,7 @@ namespace WebASCATUR.Data.Interfaces
 {
     public interface IOfertaRepository
     {
-        //IEnumerable<Oferta> ofertas { get; }
+        IEnumerable<Oferta> ofertas { get; }
         IEnumerable<Oferta> aleatorioOfertas { get; }
         //Servicio GetDrinkById(int ofertaId);
     }

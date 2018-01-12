@@ -9,7 +9,7 @@ namespace WebASCATUR.Data.Interfaces
 {
     public interface IProductoRepository
     {
-        //IEnumerable<Producto> productos { get; }
+        IEnumerable<Producto> productos { get; }
         IEnumerable<Producto> aleatorioProductos { get; }
         //Servicio GetDrinkById(int ProductoId);
     }
