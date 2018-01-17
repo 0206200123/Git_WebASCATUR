@@ -37,6 +37,16 @@ namespace WebASCATUR.Controllers
             });
         }
 
+        public ViewResult Detalle(int Id)
+        {
+            var oferta = _ofertaRepository.ofertas.FirstOrDefault(d => d.Id == Id);
+            if (oferta == null)
+            {
+                return View("~/Views/Error/Error.cshtml");
+            }
+            return View(oferta);
+        }
+
         // GET: Oferta
         public ActionResult Index()
         {

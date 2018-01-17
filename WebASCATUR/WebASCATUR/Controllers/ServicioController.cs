@@ -37,6 +37,16 @@ namespace WebASCATUR.Controllers
             });
         }
 
+        public ViewResult Detalle(int Id)
+        {
+            var servicio = _servicioRepository.servicios.FirstOrDefault(d => d.Id == Id);
+            if (servicio == null)
+            {
+                return View("~/Views/Error/Error.cshtml");
+            }
+            return View(servicio);
+        }
+
 
         // GET: Servicio
         public ActionResult Index()

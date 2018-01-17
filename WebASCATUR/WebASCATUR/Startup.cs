@@ -69,6 +69,26 @@ namespace WebASCATUR
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                   name: "productodetails",
+                   template: "Producto/Detalle/{Id?}",
+                   defaults: new { Controller = "Producto", action = "Detalle" });
+
+                routes.MapRoute(
+                   name: "serviciodetails",
+                   template: "Servicio/Detalle/{Id?}",
+                   defaults: new { Controller = "Servicio", action = "Detalle" });
+
+                routes.MapRoute(
+                   name: "ofertadetails",
+                   template: "Oferta/Detalle/{Id?}",
+                   defaults: new { Controller = "Oferta", action = "Detalle" });
+
+                routes.MapRoute(
+                   name: "eventodetails",
+                   template: "Evento/Detalle/{Id?}",
+                   defaults: new { Controller = "Evento", action = "Detalle" });
+
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Default}/{action=Index}/{id?}");
             });

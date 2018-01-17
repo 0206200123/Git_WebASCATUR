@@ -50,6 +50,15 @@ namespace WebASCATUR.Controllers
             });
         }
 
+        public ViewResult Detalle(int Id)
+        {
+            var producto = _productoRepository.productos.FirstOrDefault(d => d.Id == Id);
+            if (producto == null)
+            {
+                return View("~/Views/Error/Error.cshtml");
+            }
+            return View(producto);
+        }
 
         // GET: Producto
         public ActionResult Index()
