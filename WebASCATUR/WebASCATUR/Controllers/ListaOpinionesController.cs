@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using WebASCATUR.Models;
+using WebASCATUR.Data.Models;
+using WebASCATUR.Data;
 
 namespace WebASCATUR.Controllers
 {

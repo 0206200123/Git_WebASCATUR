@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebASCATUR.Models;
+using WebASCATUR.Data.Models;
 
 namespace WebASCATUR.ViewModels
 {

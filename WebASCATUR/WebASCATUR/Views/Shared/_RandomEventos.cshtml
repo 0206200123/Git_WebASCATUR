@@ -1,0 +1,51 @@
+﻿
+@using Microsoft.Extensions.Options;
+@using WebASCATUR.Configuration;
+@using WebASCATUR.Data.Models;
+
+@inject IOptions<ApplicationConfigurations> OptionsApplicationConfiguration
+
+@model  WebASCATUR.ViewModels.HomeViewModel
+
+@foreach (var evento in Model.aleatorioEventos)
+{
+    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
+        <!-- Work -->
+        <div class="work work-popup-trigger">
+            <div class="work-overlay">
+                <img class="full-width img-responsive" src="@(OptionsApplicationConfiguration.Value.PathImage + evento.ImagenPrimaria)" alt="Eventos">
+            </div>
+            <div class="work-popup-overlay">
+                <div class="work-popup-content">
+                    <a href="javascript:void(0);" class="work-popup-close">Cerrar</a>
+                    <div class="margin-b-30">
+                        <h3 class="margin-b-5">ASCATUR</h3>
+                        <span>Asociación Cámara para el Desarrollo del Comercio y Turismo de La Cruz</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                            <div class="margin-t-10 sm-margin-t-0">
+                                <p>@evento.Detalle</p>
+                               @* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>*@
+                                <ul class="list-inline work-popup-tag">
+                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">@evento.Nombre</a></li>
+                                    @*<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Afiliado</a></li>*@
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="margin-t-10 sm-margin-t-0">
+                                <p class="margin-b-5"><strong>Invita:</strong> ASCATUR</p>
+                                @*<p class="margin-b-5"><strong>Patrocina:</strong> Cooperativa</p>*@
+                               @* <p class="margin-b-5"><strong>Invitados:</strong> Publico General</p>*@
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Work -->
+    </div>
+}    

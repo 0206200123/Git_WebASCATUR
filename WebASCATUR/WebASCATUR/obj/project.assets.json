@@ -13118,6 +13118,8 @@
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.1",
+      "Microsoft.Extensions.DependencyInjection >= 2.0.0",
+      "Microsoft.Extensions.Options >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.1"
     ]
@@ -13174,6 +13176,10 @@
             "target": "Package",
             "version": "2.0.1"
           },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
@@ -13182,6 +13188,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "2.0.1"
+          },
+          "Microsoft.Extensions.Options": {
+            "target": "Package",
+            "version": "2.0.0"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",

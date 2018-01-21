@@ -1,0 +1,1790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://ftp.site4now.net/AdmWebASCATUR</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AdmWebASCATUR.Web.deps.json">
+      <publishTime>12/23/2017 17:02:31</publishTime>
+    </File>
+    <File Include="AdmWebASCATUR.Web.dll">
+      <publishTime>12/23/2017 17:02:20</publishTime>
+    </File>
+    <File Include="AdmWebASCATUR.Web.pdb">
+      <publishTime>12/23/2017 17:02:20</publishTime>
+    </File>
+    <File Include="AdmWebASCATUR.Web.PrecompiledViews.dll">
+      <publishTime>12/23/2017 17:02:26</publishTime>
+    </File>
+    <File Include="AdmWebASCATUR.Web.PrecompiledViews.pdb">
+      <publishTime>12/23/2017 17:02:26</publishTime>
+    </File>
+    <File Include="AdmWebASCATUR.Web.runtimeconfig.json">
+      <publishTime>12/23/2017 17:02:31</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>12/10/2017 19:38:13</publishTime>
+    </File>
+    <File Include="BouncyCastle.Crypto.dll">
+      <publishTime>12/04/2016 20:03:10</publishTime>
+    </File>
+    <File Include="CoreCompat.System.Drawing.dll">
+      <publishTime>05/12/2017 15:58:48</publishTime>
+    </File>
+    <File Include="Dapper.dll">
+      <publishTime>07/22/2016 14:52:40</publishTime>
+    </File>
+    <File Include="EPPlus.Core.dll">
+      <publishTime>08/15/2017 10:08:26</publishTime>
+    </File>
+    <File Include="FastMember.dll">
+      <publishTime>08/26/2016 15:59:54</publishTime>
+    </File>
+    <File Include="MailKit.dll">
+      <publishTime>08/07/2017 15:14:58</publishTime>
+    </File>
+    <File Include="MimeKit.dll">
+      <publishTime>08/07/2017 14:30:14</publishTime>
+    </File>
+    <File Include="Modules/Administration/Sergen/SergenPanel.ts.html">
+      <publishTime>12/10/2017 19:25:07</publishTime>
+    </File>
+    <File Include="Modules/Common/Reporting/ReportDialog.Template.html">
+      <publishTime>12/10/2017 19:25:11</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>06/18/2017 13:57:10</publishTime>
+    </File>
+    <File Include="NUglify.dll">
+      <publishTime>07/10/2017 22:52:10</publishTime>
+    </File>
+    <File Include="package-lock.json">
+      <publishTime>12/10/2017 19:25:24</publishTime>
+    </File>
+    <File Include="package.json">
+      <publishTime>12/10/2017 19:25:24</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Pkcs.dll">
+      <publishTime>11/05/2016 04:57:14</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Pkcs.dll">
+      <publishTime>11/05/2016 04:57:14</publishTime>
+    </File>
+    <File Include="Serenity.Core.dll">
+      <publishTime>11/23/2017 20:32:16</publishTime>
+    </File>
+    <File Include="Serenity.Data.dll">
+      <publishTime>11/23/2017 20:32:18</publishTime>
+    </File>
+    <File Include="Serenity.Data.Entity.dll">
+      <publishTime>11/23/2017 20:32:20</publishTime>
+    </File>
+    <File Include="Serenity.FluentMigrator.dll">
+      <publishTime>01/21/2017 21:36:48</publishTime>
+    </File>
+    <File Include="Serenity.FluentMigrator.Runner.dll">
+      <publishTime>01/21/2017 21:37:32</publishTime>
+    </File>
+    <File Include="Serenity.Services.dll">
+      <publishTime>11/23/2017 20:32:20</publishTime>
+    </File>
+    <File Include="Serenity.Web.dll">
+      <publishTime>11/23/2017 20:32:22</publishTime>
+    </File>
+    <File Include="sergen.json">
+      <publishTime>12/23/2017 07:37:28</publishTime>
+    </File>
+    <File Include="System.Security.Permissions.dll">
+      <publishTime>05/04/2017 17:22:06</publishTime>
+    </File>
+    <File Include="System.Xml.XPath.XmlDocument.dll">
+      <publishTime>11/05/2016 04:57:34</publishTime>
+    </File>
+    <File Include="tsconfig.json">
+      <publishTime>12/10/2017 19:25:24</publishTime>
+    </File>
+    <File Include="tslint.json">
+      <publishTime>12/10/2017 19:25:24</publishTime>
+    </File>
+    <File Include="Views/Templates/EntityDialog.Template.html">
+      <publishTime>12/10/2017 19:25:15</publishTime>
+    </File>
+    <File Include="Views/Templates/PropertyDialog.Template.html">
+      <publishTime>12/10/2017 19:25:15</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>12/23/2017 17:02:32</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/.csslintrc">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/404_500_errors.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/AdminLTE.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/alerts.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/bootstrap-social.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/boxes.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/buttons.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/callout.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/carousel.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/control-sidebar.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/core.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/direct-chat.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/dropdown.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/forms.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/fullcalendar.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/header.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/avatar.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/avatar04.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/avatar2.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/avatar3.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/avatar5.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/boxed-bg.jpg">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/boxed-bg.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/credit/american-express.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/credit/cirrus.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/credit/mastercard.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/credit/mestro.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/credit/paypal.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/credit/paypal2.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/credit/visa.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/default-50x50.gif">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/icons.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/photo1.jpg">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/img/photo2.jpg">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/info-box.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/invoice.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/labels.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/lockscreen.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/login_and_register.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/mailbox.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/miscellaneous.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/mixins.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/modal.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/navs.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/print.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/products.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/profile.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/progress-bars.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/select2.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/sidebar-mini.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/sidebar.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-black-light.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-black.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-blue-light.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-blue.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-green-light.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-green.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-purple-light.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-purple.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-red-light.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-red.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-yellow-light.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/skin-yellow.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/skins/_all-skins.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/small-box.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/social-widgets.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/table.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/timeline.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/users-list.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/adminlte/variables.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/aristo/aristo.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/aristo/images/icon_sprite.png">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/aristo/images/progress_bar.gif">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/aristo/images/slider_handles.png">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/aristo/images/ui-icons_222222_256x240.png">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/aristo/images/ui-icons_454545_256x240.png">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins.less">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/alerts.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/background-variant.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/border-radius.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/buttons.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/center-block.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/clearfix.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/forms.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/gradients.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/grid-framework.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/grid.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/hide-text.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/image.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/labels.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/list-group.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/nav-divider.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/nav-vertical-align.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/opacity.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/pagination.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/panels.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/progress-bar.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/reset-filter.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/reset-text.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/resize.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/responsive-visibility.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/size.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/tab-focus.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/table-row.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/text-emphasis.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/text-overflow.less">
+      <publishTime>12/10/2017 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/mixins/vendor-prefixes.less">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-less/variables.less">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-theme.css">
+      <publishTime>07/25/2016 16:42:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-theme.css.map">
+      <publishTime>07/25/2016 16:42:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-theme.min.css">
+      <publishTime>07/25/2016 16:42:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap-theme.min.css.map">
+      <publishTime>07/25/2016 16:42:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap.css">
+      <publishTime>07/25/2016 16:42:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap.css.map">
+      <publishTime>07/25/2016 16:42:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap.min.css">
+      <publishTime>07/25/2016 16:42:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/bootstrap.min.css.map">
+      <publishTime>07/25/2016 16:42:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/colorbox/images/border.png">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/colorbox/images/controls.png">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/colorbox/images/loading.gif">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/colorbox/images/loading_background.png">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/colorbox/jquery.colorbox.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/css/select2-spinner.gif">
+      <publishTime>07/30/2014 19:40:32</publishTime>
+    </File>
+    <File Include="wwwroot/Content/css/select2.css">
+      <publishTime>07/30/2014 19:40:32</publishTime>
+    </File>
+    <File Include="wwwroot/Content/css/select2.png">
+      <publishTime>07/30/2014 19:40:32</publishTime>
+    </File>
+    <File Include="wwwroot/Content/css/select2x2.png">
+      <publishTime>07/30/2014 19:40:32</publishTime>
+    </File>
+    <File Include="wwwroot/Content/font-awesome.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/font-awesome.min.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/font-open-sans-base64.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/font-open-sans.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/glyphicons.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/all.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/aero%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/aero.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/aero.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/blue%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/blue.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/blue.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/flat%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/flat.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/flat.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/green%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/green.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/green.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/grey%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/grey.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/grey.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/orange%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/orange.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/orange.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/pink%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/pink.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/pink.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/purple%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/purple.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/purple.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/red%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/red.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/red.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/yellow%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/yellow.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/yellow.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/flat/_all.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/futurico/futurico%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/futurico/futurico.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/futurico/futurico.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/aero.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/blue.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/green.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/grey.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/line%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/line.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/line.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/orange.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/pink.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/purple.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/red.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/yellow.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/line/_all.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/aero%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/aero.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/aero.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/blue%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/blue.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/blue.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/green%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/green.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/green.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/grey%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/grey.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/grey.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/minimal%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/minimal.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/minimal.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/orange%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/orange.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/orange.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/pink%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/pink.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/pink.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/purple%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/purple.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/purple.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/red%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/red.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/red.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/yellow%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/yellow.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/yellow.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/minimal/_all.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/polaris/polaris%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/polaris/polaris.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/polaris/polaris.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/aero%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/aero.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/aero.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/blue%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/blue.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/blue.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/green%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/green.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/green.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/grey%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/grey.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/grey.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/orange%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/orange.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/orange.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/pink%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/pink.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/pink.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/purple%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/purple.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/purple.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/red%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/red.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/red.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/square%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/square.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/square.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/yellow%402x.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/yellow.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/yellow.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/iCheck/square/_all.css">
+      <publishTime>12/10/2017 19:25:17</publishTime>
+    </File>
+    <File Include="wwwroot/Content/images/collapse.gif">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/images/down.gif">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/images/expand.gif">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/images/header-columns-bg.gif">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/images/header-columns-over-bg.gif">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/images/logoASC.png">
+      <publishTime>11/12/2017 21:51:45</publishTime>
+    </File>
+    <File Include="wwwroot/Content/images/sort-asc.gif">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/images/sort-desc.gif">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/ionicons.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/ionicons.min.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/jquery.fileupload.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/pace.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/pace.min.css">
+      <publishTime>12/10/2017 19:25:18</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/32px.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/accessright.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/accordion-down.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/accordion-left.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/accordion-right.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/add.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/add2.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/address-book-open.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/address-book.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/agenda.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/alarm-clock-exclamation.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/alarm-clock.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/application-resize-actual.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/application-resize-full.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/application-resize.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/apply-button.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/apply-changes-button.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/arrow-circle-135.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/arrow-circle-double.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/arrow-continue.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/arrow-curve-left.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/arrow-down.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/arrow-step-over.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/arrow-stop.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/arrow-up.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/asterisk.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/auction-hammer.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/back-arrow-black.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/back-arrow-white.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/balance.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/balloon.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/balloons.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/barcode.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/bell.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/bin-exclamation.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/bin-minus.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/bin.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/binocular.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/blank.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/block.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/blog.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/bomb.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/book-open.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/book.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/bookmark.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/box.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/briefcase.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/brightness-small-low.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/brightness-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/bug.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/building-arrow.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/building-medium.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/building-old.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/building.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/calculator.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/calculator2.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/calculator3.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/calendar-blue.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/calendar-day.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/calendar-task.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/calendar.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/card-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/categories.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/category.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/certificate-fail.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/certificate-fail2.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/certificate-ok.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/certificate-ok2.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/chain-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/check2.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/checkbox-gray.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/checkbox-no.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/checkbox-null.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/checkbox-states.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/checkbox-yes.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/clipboard-list.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/clipboard-task.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/clock.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/column-picker.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/construction.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/control-record-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/counter.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/credit-card.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/cross-script.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/cross.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/csv.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/currency.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/cv.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/data-sync.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/datepicker.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/datepicker.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/delete.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/delete2.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/dialog-alert.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/dialog-confirm.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/dialog-information.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/dialog-warning.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/direction.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/disk-arrow.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/disk-black-accept.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/disk-black.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/disk.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/doc.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/document-copy.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/document-print-preview.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/document-small-list.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/document-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/document-task.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/document.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/documents-stack.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/docx.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/door.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/down.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/drawer.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/dropdown.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/edit.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/envelope.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/eraser-plus.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/eraser.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/exclamation.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/eye.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/feed.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/file-import.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/fingerprint.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/folder-arrow.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/folder-close.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/folder-horizontal.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/folder-import.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/folder-open-document.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/full-screen-2.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/funnel.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/gear.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/get-products.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/get.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/globe-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/grid-title-bg.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/gtk-print-preview.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/hammer-screwdriver.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/hammer.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/header-columns-bg.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/header-columns-over-bg.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/home.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/hourglass.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/icon_sprite.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/inbox-document-text.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/inbox-document.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/inbox.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/information-frame.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/jpg.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/key.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/keyboard.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/layer-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/license-key.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/lifebuoy.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/light-bulb.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/list-delete.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/loading.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/location.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/lock.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/luggage.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/magnifier-left.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/magnifier-medium-left.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/magnifier-medium.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/magnifier-zoom.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/magnifier.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/mail-open.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/mail.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/maximize-button.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/maximize-button2.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/medal.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/meeting.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/mhtml.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/money.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/new.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/newspaper.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/node-insert-next.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/node-select-all.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/notebook-pencil.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/notebook-share.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/notebook.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/notebooks.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/odata.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/ok.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/open-share.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/order.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/organization-tree.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/outlook.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pager-bg.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pager-buttons.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pager-load.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pager-refresh.png">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/paper-bag.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/paper-clip.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/payment.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pda.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pdf.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pencil.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/picture-delete.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/picture.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pill.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pin.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/pipette.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/place-empty.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/plug.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/plus-button.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/plus-circle-false.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/plus-circle.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/plus-octagon-frame.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/plus.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/png.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/price-tag.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/printer.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/product.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/project-logs.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/project-module.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/project-version.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/project.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/projection-screen-presentation.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/projection-screen.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/property-blue.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/property.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/question-frame.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/quick-search-loading.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/receipt.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/report-arrow.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/report-excel.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/report-minus.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/report-pencil.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/report-plus.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/report.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/ruby.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/ruler.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/safe.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sale.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/scissors.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/script.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/scripts-text.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sitemap-application-blue.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sitemap.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/slash.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/slick-header-columns-over-bg.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/slides.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sofa.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sort-order.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/spreadsheet-template.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/spreadsheet.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sprites.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/star-pencil.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sticky-note-plus.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sticky-note-small-pin.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sticky-note-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sticky-notes-pin.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sticky-notes-stack.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/sticky-notes.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/stock.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/store.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/table-chart.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/table-header.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/table-select-all.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/table.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tag--arrow.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tag--exclamation.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tag-label.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tag-plus.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tag-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tag.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tags-label.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tags.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/thumb-file-72.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tick-empty.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tick-green.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/tick-red.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/ticket-arrow.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/ticket-exclamation.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/ticket-plus.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/ticket-stub.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/ticket-user.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/toggle-expand.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/toggle-small-expand.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/toggle-small.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/toggle.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/toolbar-bg.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/toolbox.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/trash.gif">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/images/trash.png">
+      <publishTime>11/21/2017 12:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/serenity/serenity.css">
+      <publishTime>12/18/2017 22:12:41</publishTime>
+    </File>
+    <File Include="wwwroot/Content/simple-line-icons.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/slick-default-theme.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/slick.columnpicker.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/slick.grid.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/slick.headerbuttons.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/slick.headermenu.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/slick.pager.css">
+      <publishTime>11/08/2017 10:13:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/toastr.css">
+      <publishTime>03/12/2015 21:25:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/toastr.less">
+      <publishTime>03/12/2015 21:25:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/toastr.min.css">
+      <publishTime>03/12/2015 21:25:02</publishTime>
+    </File>
+    <File Include="wwwroot/Content/toastr.scss">
+      <publishTime>03/12/2015 21:25:02</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>11/23/2017 10:37:42</publishTime>
+    </File>
+    <File Include="wwwroot/_references.js">
+      <publishTime>12/10/2017 19:25:24</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

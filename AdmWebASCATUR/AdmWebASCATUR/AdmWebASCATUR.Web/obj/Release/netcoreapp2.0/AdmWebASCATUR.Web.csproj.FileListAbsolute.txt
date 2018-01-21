@@ -1,0 +1,11 @@
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\bin\Release\netcoreapp2.0\AdmWebASCATUR.Web.deps.json
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\bin\Release\netcoreapp2.0\AdmWebASCATUR.Web.runtimeconfig.json
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\bin\Release\netcoreapp2.0\AdmWebASCATUR.Web.runtimeconfig.dev.json
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\bin\Release\netcoreapp2.0\AdmWebASCATUR.Web.dll
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\bin\Release\netcoreapp2.0\AdmWebASCATUR.Web.pdb
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\obj\Release\netcoreapp2.0\AdmWebASCATUR.Web.csprojResolveAssemblyReference.cache
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\obj\Release\netcoreapp2.0\AdmWebASCATUR.Web.csproj.CoreCompileInputs.cache
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\obj\Release\netcoreapp2.0\AdmWebASCATUR.Web.AssemblyInfoInputs.cache
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\obj\Release\netcoreapp2.0\AdmWebASCATUR.Web.AssemblyInfo.cs
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\obj\Release\netcoreapp2.0\AdmWebASCATUR.Web.dll
+C:\Users\Manue\source\repos\Git_WebASCATUR\AdmWebASCATUR\AdmWebASCATUR\AdmWebASCATUR.Web\obj\Release\netcoreapp2.0\AdmWebASCATUR.Web.pdb

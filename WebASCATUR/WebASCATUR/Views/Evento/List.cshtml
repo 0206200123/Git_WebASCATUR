@@ -1,0 +1,7 @@
+﻿@model EventosListViewModel
+<div class="row marginTop">
+    @foreach (var evento in Model.Eventos)
+    {
+        @Html.Partial("EventosSummary", evento)
+    }
+</div>
