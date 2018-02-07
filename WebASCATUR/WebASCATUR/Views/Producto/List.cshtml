@@ -1,4 +1,10 @@
 ﻿@model ProductosListViewModel
+
+@{
+    //ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutGallery.cshtml";
+}
+
 <div class="row marginTop">
     @foreach (var producto in Model.Productos)
     {
