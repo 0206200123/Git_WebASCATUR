@@ -14,7 +14,8 @@
         </div>
         <h4><a href="#">@producto.Nombre</a></h4>
         <p>@producto.Detalle</p>
-        <a class="link" href="#">Read More</a>
+        <a class="link" asp-controller="Producto" asp-action="Detalle" asp-route-Id="@producto.Id">Leer Más</a>
+        @*<a class="link" href="#">Read More</a>*@
     </div>
 
       <!-- Latest Products -->
