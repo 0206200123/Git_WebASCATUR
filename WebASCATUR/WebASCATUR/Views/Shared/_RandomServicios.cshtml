@@ -13,7 +13,7 @@
         <div class="margin-b-20">
             <img class="img-responsive wow fadeInUp" src="@(OptionsApplicationConfiguration.Value.PathImage + servicio.ImagenPrimaria)" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s" data-wow-iteration="2">
         </div>
-        <h4><a href="#">@servicio.Nombre</a></h4>
+        <h4><a asp-controller="Servicio" asp-action="Detalle" asp-route-Id="@servicio.Id">@servicio.Nombre</a></h4>
         <p style="white-space: nowrap; width: 18em;text-overflow:ellipsis; overflow: hidden;">@servicio.Detalle</p>
         
         <a class="link" asp-controller="Servicio" asp-action="Detalle" asp-route-Id="@servicio.Id">Leer Más</a>

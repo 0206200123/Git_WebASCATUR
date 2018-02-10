@@ -5,9 +5,19 @@
     Layout = "~/Views/Shared/_LayoutGallery.cshtml";
 }
 
-<div class="row marginTop">
-    @foreach (var producto in Model.Productos)
-    {
-        @Html.Partial("ProductosSummary", producto)
-    }
-</div>
+    <div class="row marginTop">
+        <form class="navbar-form navbar-left" asp-controller="Producto" asp-action="Search" method="get">
+            
+            <div class="form-group">
+                <h3>Búsqueda rápida: </h3>
+                <input type="text" class="form-control" placeholder="Buscar por nombre" name="searchString" value="@ViewData["searchString"]">
+            </div>
+        </form>
+    </div>
+
+    <div class="row marginTop">
+        @foreach (var producto in Model.Productos)
+        {
+            @Html.Partial("ProductosSummary", producto)
+        }
+    </div>

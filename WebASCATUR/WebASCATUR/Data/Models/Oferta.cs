@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebASCATUR.Data.Models
 {
@@ -13,6 +15,21 @@ namespace WebASCATUR.Data.Models
         public decimal? Cantidad { get; set; }
         public DateTime? FechaIngreso { get; set; }
         public string ImagenPrimaria { get; set; }
+
+        [NotMapped]
+        public List<FileImage> Imagenes
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(GaleriaImagenes))
+                {
+                    return new List<FileImage>();
+
+                }
+                return JsonConvert.DeserializeObject<List<FileImage>>(GaleriaImagenes);
+            }
+        }
+
         public string GaleriaImagenes { get; set; }
         public string DetalleIngles { get; set; }
         public decimal? PrecioIngles { get; set; }

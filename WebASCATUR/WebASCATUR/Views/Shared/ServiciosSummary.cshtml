@@ -13,7 +13,9 @@
             <h3>
                 <a asp-controller="Servicio" asp-action="Detalle" asp-route-Id="@Model.Id">@Model.Nombre</a>
             </h3>
-            <p>@Model.Detalle</p>
+            <p style="white-space: nowrap; width: 18em;text-overflow:ellipsis; overflow: hidden;">@Model.Detalle</p>
+            <a class="link" asp-controller="Servicio" asp-action="Detalle" asp-route-Id="@Model.Id">Leer Más</a>
+            <br />
         </div>
         @*<div class="addToCart text-right">
             <p class="button ">

@@ -50,6 +50,24 @@ namespace WebASCATUR.Controllers
             });
         }
 
+        public ViewResult Search(string searchString)
+        {
+            string _searchString = searchString;
+            IEnumerable<Producto> productos;
+            string currentCategory = string.Empty;
+
+            if (string.IsNullOrEmpty(_searchString))
+            {
+                productos = _productoRepository.productos.OrderBy(p => p.Id);
+            }
+            else
+            {
+                productos = _productoRepository.productos.Where(p => p.Nombre.ToLower().Contains(_searchString.ToLower()));
+            }
+
+            return View("~/Views/Producto/List.cshtml", new ProductosListViewModel { Productos = productos});
+        }
+
         public ViewResult Detalle(int Id)
         {
             var producto = _productoRepository.productos.FirstOrDefault(d => d.Id == Id);

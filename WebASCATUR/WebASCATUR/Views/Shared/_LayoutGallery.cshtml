@@ -46,6 +46,7 @@
     @*</div>*@
     <!--========== END PAGE LAYOUT ==========-->
     <!--========== FOOTER ==========-->
+    <hr width="100%" />
     <footer class="footer">
         <!-- Links -->
         <div class="section-seperator">
@@ -54,11 +55,12 @@
                     <div class="col-sm-2 sm-margin-b-30">
                         <!-- List -->
                         <ul class="list-unstyled footer-list">
-                            <li class="footer-list-item"><a href="#body">Inicio</a></li>
-                            <li class="footer-list-item"><a href="#acerca_de">Nosotros</a></li>
-                            <li class="footer-list-item"><a href="#services">Servicios</a></li>
-                            <li class="footer-list-item"><a href="#Eventos">Eventos</a></li>
-                            <li class="footer-list-item"><a href="#productos">Productos</a></li>
+                            <li class="footer-list-item"><a asp-controller="Default" asp-action="Index">Inicio</a></li>
+                            <li class="footer-list-item"><a asp-controller="Comercio" asp-action="List">Asociados</a></li>
+                            <li class="footer-list-item"><a asp-controller="Oferta" asp-action="List">Ofertas</a></li>
+                            <li class="footer-list-item"><a asp-controller="Servicio" asp-action="List">Servicios</a></li>
+                            <li class="footer-list-item"><a asp-controller="Evento" asp-action="List">Eventos</a></li>
+                            <li class="footer-list-item"><a asp-controller="Producto" asp-action="List">Productos</a></li>
                             <li class="footer-list-item"><a href="#Contactos">Contact</a></li>
                         </ul>
                         <!-- End List -->
@@ -66,19 +68,19 @@
                     <div class="col-sm-2 sm-margin-b-30">
                         <!-- List -->
                         <ul class="list-unstyled footer-list">
-                            <li class="footer-list-item"><a href="#">Twitter</a></li>
-                            <li class="footer-list-item"><a href="#">Facebook</a></li>
-                            <li class="footer-list-item"><a href="#">Instagram</a></li>
-                            <li class="footer-list-item"><a href="#">YouTube</a></li>
+                            @* <li class="footer-list-item"><a href="#">Twitter</a></li>*@
+                            <li class="footer-list-item"><a href="https://www.facebook.com/ASCATURLACRUZ/?ref=br_rs">Facebook</a></li>
+                            @*<li class="footer-list-item"><a href="#">Instagram</a></li>
+                                <li class="footer-list-item"><a href="#">YouTube</a></li>*@
                         </ul>
                         <!-- End List -->
                     </div>
                     <div class="col-sm-3">
                         <!-- List -->
                         <ul class="list-unstyled footer-list">
-                            <li class="footer-list-item"><a href="#">Subscribe to Our Newsletter</a></li>
-                            <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
-                            <li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
+                            @*<li class="footer-list-item"><a href="#">Subscribe to Our Newsletter</a></li>*@
+                            <li class="footer-list-item"><a href="#">Política Privacidad</a></li>
+                            <li class="footer-list-item"><a href="#">Términos &amp; Condiciones</a></li>
                         </ul>
                         <!-- End List -->
                     </div>
@@ -91,9 +93,10 @@
         <div class="content container">
             <div class="row">
                 <div class="col-xs-6">
-                    <img class="footer-logo" src="~/img/logoasc.png" alt="Aironepage Logo">
+                    <img class="footer-logo" src="~/img/logoasc.png" alt="Logo ASCATUR">
                     <img class="footer-logo" src="~/img/logo-ict.png" alt="Logo ICT">
                 </div>
+
                 <div class="col-xs-6 text-right">
                     <p class="margin-b-0"><a class="fweight-700" href="http://www.ascatur.com">Asociación Cámara de Desarrollo del Comercio y Turismo de La Cruz, Guanacaste </a> Derechos reservados: <a class="fweight-700" href="http://www.ascatur.com/">ASCATUR.COM</a></p>
                 </div>
