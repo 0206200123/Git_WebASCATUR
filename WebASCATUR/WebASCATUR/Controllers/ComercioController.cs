@@ -24,25 +24,13 @@ namespace WebASCATUR.Controllers
             IEnumerable<Comercio> comercios;
             string currentCategory = string.Empty;
 
-            //if (string.IsNullOrEmpty(category))
-            //{
             comercios = _comercioRepository.comercios.OrderBy(p => p.Id);
-            //currentCategory = "All drinks";
-            //}
-            //else
-            //{
-            //    if (string.Equals("Alcoholic", _category, StringComparison.OrdinalIgnoreCase))
-            //        drinks = _drinkRepository.Drinks.Where(p => p.Category.CategoryName.Equals("Alcoholic")).OrderBy(p => p.Name);
-            //    else
-            //        drinks = _drinkRepository.Drinks.Where(p => p.Category.CategoryName.Equals("Non-alcoholic")).OrderBy(p => p.Name);
 
-            //    currentCategory = _category;
-            //}
 
             return View(new ComercioListViewModel
             {
                 Comercios = comercios,
-                //CurrentCategory = currentCategory
+              
             });
         }
 
@@ -54,6 +42,24 @@ namespace WebASCATUR.Controllers
                 return View("~/Views/Error/Error.cshtml");
             }
             return View(comercio);
+        }
+
+        public ViewResult Search(string searchString)
+        {
+            string _searchString = searchString;
+            IEnumerable<Comercio> comercios;
+            string currentCategory = string.Empty;
+
+            if (string.IsNullOrEmpty(_searchString))
+            {
+                comercios = _comercioRepository.comercios.OrderBy(p => p.Id);
+            }
+            else
+            {
+                comercios = _comercioRepository.comercios.Where(p => p.Nombre.ToLower().Contains(_searchString.ToLower()));
+            }
+
+            return View("~/Views/Comercio/List.cshtml", new ComercioListViewModel { Comercios = comercios });
         }
 
     }

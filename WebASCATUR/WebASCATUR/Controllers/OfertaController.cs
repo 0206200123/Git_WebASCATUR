@@ -47,6 +47,23 @@ namespace WebASCATUR.Controllers
             return View(oferta);
         }
 
+        public ViewResult Search(string searchString)
+        {
+            string _searchString = searchString;
+            IEnumerable<Oferta> ofertas;
+            string currentCategory = string.Empty;
+
+            if (string.IsNullOrEmpty(_searchString))
+            {
+                ofertas = _ofertaRepository.ofertas.OrderBy(p => p.Id);
+            }
+            else
+            {
+                ofertas = _ofertaRepository.ofertas.Where(p => p.Nombre.ToLower().Contains(_searchString.ToLower()));
+            }
+
+            return View("~/Views/Oferta/List.cshtml", new OfertasListViewModel { Ofertas = ofertas });
+        }
         // GET: Oferta
         public ActionResult Index()
         {
