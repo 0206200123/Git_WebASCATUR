@@ -1,6 +1,7 @@
 ﻿
 namespace AdmWebASCATUR.Ascatur.Entities
 {
+    using AdmWebASCATUR.Web.Modules.Ascatur.Comercio;
     using Serenity;
     using Serenity.ComponentModel;
     using Serenity.Data;
@@ -14,7 +15,7 @@ namespace AdmWebASCATUR.Ascatur.Entities
     [ReadPermission("PermissionKeys:Comercio")]
     [ModifyPermission("PermissionKeys:Comercio")]
     [LookupScript("Ascatur:Oferta")]
-    public sealed class OfertaRow : Row, IIdRow, INameRow
+    public sealed class OfertaRow : Row, IIdRow, INameRow, IMultiComercioRow
     {
         [DisplayName("Id"), Identity]
         public Int32? Id
