@@ -1,0 +1,170 @@
+﻿@using Microsoft.Extensions.Options;
+@using WebASCATUR.Configuration;
+@using WebASCATUR.Data.Models;
+
+@inject IOptions<ApplicationConfigurations> OptionsApplicationConfiguration
+
+@model Comercio
+
+@{
+    //ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutGallery.cshtml";
+}
+
+<div class="content-md container">
+    <div class="row">
+  
+        <div class="row text-center margin-b-40">
+            <div class="text-center view overlay hm-white-slight">
+                <img src="@(OptionsApplicationConfiguration.Value.PathImage + Model.ImagenPrimaria)" class="img-fluid" alt="">
+                <a href="#">
+                    <div class="mask waves-effect waves-light"></div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3">
+                <!--Title-->
+                <h2 class="card-title">@Model.Nombre</h2>
+                <!--Text-->
+                <p class="text-justify">@Model.Descripcion</p>
+                <p class="text-justify">Dirección : @Model.Direccion</p>
+                <p class="text-justify">Teléfono: @Model.Telefono</p>
+                <p class="text-justify">Correo: @Model.Mail</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="row text-center margin-b-40">
+
+            <!--THUMBNAILS-->
+
+            <ul class="list-inline">
+
+                <li data-toggle="modal" data-target="#myModal">
+                    <a href="#myCarousel" data-slide-to="0">
+                        <img class="img-thumbnail" src="https://dummyimage.com/200x133/000/fff" alt="..."><br>
+
+                        Galería de Imágenes..
+                    </a>
+                </li>
+
+            </ul>
+
+            <!--begin modal window-->
+
+            <div class="modal fade" id="myModal">
+
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+
+                            <div class="pull-left">Galería de Imágenes</div>
+
+                            <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="modal-body">
+
+                            <!--CAROUSEL CODE GOES HERE-->
+
+                            <div id="myCarousel" class="carousel slide" data-interval="false">
+
+                                <div class="carousel-inner">
+
+                                    @*<div class="item active">
+                                            <img src="https://dummyimage.com/600x400/000/fff" alt="item0">
+
+                                            <div class="carousel-caption">
+
+                                                <h3>Heading 3</h3>
+
+                                                <p>Slide 0  description.</p>
+
+                                            </div>
+
+                                        </div>*@
+
+                                    @foreach (var image in Model.Imagenes)
+                                    {
+
+                                        <div class="item">
+                                            <img src='@(OptionsApplicationConfiguration.Value.PathImage  + image.Filename)' alt="item0">
+
+                                        </div>
+
+                                    }
+
+                                    <!--end carousel-inner-->
+                                </div>
+
+                                <!--Begin Previous and Next buttons-->
+
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                                <!--end carousel-->
+                            </div>
+
+                            <!--end modal-body-->
+                        </div>
+
+                        <div class="modal-footer">
+
+                            <div class="pull-left"> <small>ASCATUR.COM <a href="https://dummyimage.com" target="new"></a></small> </div>
+
+                            <button class="btn-sm close" type="button" data-dismiss="modal">Cerrar</button>
+
+                            <div class="clearfix"></div>
+
+                            <!--end modal-footer-->
+                        </div>
+
+                        <!--end modal-content-->
+                    </div>
+
+                    <!--end modal-dialoge-->
+                </div>
+
+                <!--end myModal-->
+            </div>
+
+            <!--end col-->
+        </div>
+
+        <!--end row-->
+    </div>
+    @*<div class="row text-center margin-b-40">
+        @Html.Partial("OpinionCreate", Model.Opinion)
+        @*<div class="col-md-4">
+            <form asp-action="OpinionCreate">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="IdComercio" class="control-label"></label>
+                    <select asp-for="IdComercio" class="form-control" asp-items="ViewBag.IdComercio"></select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Model.Detalle" class="control-label"></label>
+                    <input asp-for="Detalle" class="form-control" />
+                    <span asp-validation-for="Detalle" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NombreUsuario" class="control-label"></label>
+                    <input asp-for="NombreUsuario" class="form-control" />
+                    <span asp-validation-for="NombreUsuario" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FechaIngreso" class="control-label"></label>
+                    <input asp-for="FechaIngreso" class="form-control" />
+                    <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </form>
+        </div>*@
+ 
+    </div>

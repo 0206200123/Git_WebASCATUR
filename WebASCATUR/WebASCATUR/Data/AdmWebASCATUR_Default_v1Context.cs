@@ -284,7 +284,8 @@ namespace WebASCATUR.Data
                     .HasColumnName("Fecha_Ingreso")
                     .HasColumnType("date");
 
-                entity.Property(e => e.GaleriaImagenes).HasColumnName("Galeria_Imagenes");
+                entity.Property(e => e.GaleriaImagenes)
+                    .HasColumnName("Galeria_Imagenes");
 
                 entity.Property(e => e.IdComercio).HasColumnName("Id_Comercio");
 

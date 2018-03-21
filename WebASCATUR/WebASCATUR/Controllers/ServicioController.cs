@@ -47,7 +47,23 @@ namespace WebASCATUR.Controllers
             return View(servicio);
         }
 
+        public ViewResult Search(string searchString)
+        {
+            string _searchString = searchString;
+            IEnumerable<Servicio> servicios;
+            string currentCategory = string.Empty;
 
+            if (string.IsNullOrEmpty(_searchString))
+            {
+                servicios = _servicioRepository.servicios.OrderBy(p => p.Id);
+            }
+            else
+            {
+                servicios = _servicioRepository.servicios.Where(p => p.Nombre.ToLower().Contains(_searchString.ToLower()));
+            }
+
+            return View("~/Views/Servicio/List.cshtml", new ServiciosListViewModel { Servicios = servicios });
+        }
         // GET: Servicio
         public ActionResult Index()
         {

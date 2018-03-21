@@ -47,6 +47,25 @@ namespace WebASCATUR.Controllers
             return View(evento);
         }
 
+
+        public ViewResult Search(string searchString)
+        {
+            string _searchString = searchString;
+            IEnumerable<Eventos> eventos;
+            string currentCategory = string.Empty;
+
+            if (string.IsNullOrEmpty(_searchString))
+            {
+                eventos = _eventoRepository.eventos.OrderBy(p => p.Id);
+            }
+            else
+            {
+                eventos = _eventoRepository.eventos.Where(p => p.Nombre.ToLower().Contains(_searchString.ToLower()));
+            }
+
+            return View("~/Views/Evento/List.cshtml", new EventosListViewModel{ Eventos = eventos });
+        }
+
         // GET: Evento
         public ActionResult Index()
         {

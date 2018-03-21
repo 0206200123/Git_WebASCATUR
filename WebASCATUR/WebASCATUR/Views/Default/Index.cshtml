@@ -4,10 +4,10 @@
   ViewData["Title"] = "Index";
   Layout = "~/Views/Shared/_LayoutClientSide.cshtml";
 }
-
+@*@await Html.PartialAsync("Carousel")*@
     <!-- Acerca de.. -->
     <div id="acerca_de">
-        <div class="container-full-width">
+        <div class="content-md container">
 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -21,7 +21,7 @@
                 <div class="carousel-inner">
 
                     <div class="item active">
-                        <img class="full-width img-responsive" src="~/img/1920x1080/test.jpg" alt="Los Angeles" style="width:100%">
+                        <img class="full-width img-responsive" src="~/img/1920x1080/03.jpg" alt="Los Angeles" style="width:100%">
                         <div class="carousel-caption">
                             <h2 style="color:white;">Visión</h2>
                             <p style="color:white;">Ser una fuente de oportunidades para la generación de empleos, rescatando y manteniendo su identidad cultural y ambiental, siendo inclusivo a todos los sectores vulnerables del Cantón La Cruz.</p>
@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="item">
-                        <img class="full-width img-responsive" src="~/img/1920x1080/01.jpg" alt="Chicago">
+                        <img class="full-width img-responsive" src="~/img/1920x1080/02.jpg" alt="Chicago">
                         <div class="carousel-caption">
                             <h2 style="color:white;">Misión</h2>
                             <p style="color:white;">Representar al sector comercial y turístico potenciando el desarrollo económico con responsabilidad social, cultural y ambiental, para mejorar la calidad de vida de los habitantes de La Cruz.</p>
@@ -37,7 +37,7 @@
                     </div>
 
                     <div class="item">
-                        <img class="full-width img-responsive" src="~/img/1920x1080/test.jpg" alt="New York">
+                        <img class="full-width img-responsive" src="~/img/1920x1080/05.jpg" alt="New York">
                         <div class="carousel-caption">
                             <h2 style="color:white;">Valores</h2>
                             <p style="color:white;">
@@ -64,16 +64,6 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
-            <!-- <div class="row row-space-2">
-                 <div class="col-sm-6 sm-margin-b-4">
-                     <img class="img-responsive" src="img/970x647/01.jpg" alt="Image">
-                 </div>
-                 <div class="col-sm-6">
-                     <img class="img-responsive" src="img/970x647/03.jpg" alt="Image">
-                 </div>
-             </div>-->
-            <!--// end row -->
         </div>
     </div>
    <!-- Ofertas-->
@@ -91,12 +81,11 @@
                 <!-- Latest Ofertas-->
                 @Html.Partial("_RandomOfertas", Model)
 
-
-
                 <!-- End Latest Ofertas---->
             </div>
             <!--// end row -->
-            <a class="bottom" href="#">Ver todos..</a>
+            <br />
+            <a class="link" asp-controller="Oferta" asp-action="List">VER TODAS LAS OFERTAS</a>
         </div>
 
 
@@ -115,40 +104,11 @@
             <div class="row">
                 <!-- Latest Products -->
                 @Html.Partial("_RandomServicios", Model)
-                @*<div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <img class="img-responsive wow fadeInUp" src="~/img/970x647/talleres.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s" data-wow-iteration="2">
-                    </div>
-                    <h4><a href="#">Talleres</a> <span class="text-uppercase margin-l-20">Souvenir</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <a class="link" href="#">Read More</a>
-                </div>
-                <!-- End Latest Products -->
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <img class="img-responsive wow bounceIn" src="~/img/970x647/tourCaballo.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".1s" data-wow-iteration="2">
-                    </div>
-                    <h4><a href="#">Turismo</a> <span class="text-uppercase margin-l-20">Rural</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <a class="link" href="#">Read More</a>
-                </div>
-                <!-- End Latest Products -->
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <img class="img-responsive wow fadeInDown" src="~/img/970x647/hospedaje.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".3s" data-wow-iteration="2">
-                    </div>
-                    <h4><a href="#">Hospedajes</a> <span class="text-uppercase margin-l-20">Hoteleria</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <a class="link" href="#">Read More</a>
-                </div>*@
-
-
-                <!-- End Latest Products -->
+          
             </div>
             <!--// end row -->
-            <a class="bottom" href="#">Ver todos..</a>
+            <br/>
+            <a class="link" asp-controller="Servicio" asp-action="List">VER TODOS LOS SERVICIOS</a>
         </div>
 
 
@@ -164,219 +124,28 @@
     <!-- End Promo Banner -->
     <!-- Work -->
     <div id="Eventos">
-        <div class="row text-center margin-b-40">
-            <div class="col-sm-6 col-sm-offset-3">
+        <div class="container content-lg">
+            <div class="row text-center margin-b-40">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <br />
+                    <h2>Eventos y Noticias</h2>
+                    <p>Informese de las mejores actividades del cantón de La Cruz, Guanacaste </p>
+                </div>
+            </div>
+
+            <div class="content-md container">
+                <!-- Masonry Grid -->
+                <div class="masonry-grid row row-space-2">
+                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                    @Html.Partial("_RandomEventos", Model)
+
+                </div>
+                <!-- End Masonry Grid -->
                 <br />
-                <h2>Eventos y Noticias</h2>
-                <p>Informese de las mejores actividades del cantón de La Cruz, Guanacaste </p>
+                <a class="link" asp-controller="Evento" asp-action="List">VER TODOS LOS EVENTOS</a>
             </div>
         </div>
-
-        <div class="content-md container">
-            <!-- Masonry Grid -->
-            <div class="masonry-grid row row-space-2">
-                <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                @Html.Partial("_RandomEventos", Model)
-                @*<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
-                    <!-- Work -->
-                    <div class="work work-popup-trigger">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="~/img/Imagenes_descargadas/cantonales.jpg" alt="Portfolio Image">
-                        </div>
-                        <div class="work-popup-overlay">
-                            <div class="work-popup-content">
-                                <a href="javascript:void(0);" class="work-popup-close">Cerrar</a>
-                                <div class="margin-b-30">
-                                    <h3 class="margin-b-5">ASCATUR</h3>
-                                    <span>Asociación Cámara de Desarrollo del Comercio y Turismo de La Cruz</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                            <ul class="list-inline work-popup-tag">
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Detalle</a></li>
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Afiliado</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p class="margin-b-5"><strong>Invita:</strong> ASCATUR</p>
-                                            <p class="margin-b-5"><strong>Patrocina:</strong> Cooperativa</p>
-                                            <p class="margin-b-5"><strong>Invitados:</strong> Publico General</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Work -->
-                </div>
-                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
-                    <!-- Work -->
-                    <div class="work work-popup-trigger">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="~/img/Imagenes_descargadas/feria.jpg" alt="Portfolio Image">
-                        </div>
-                        <div class="work-popup-overlay">
-                            <div class="work-popup-content">
-                                <a href="javascript:void(0);" class="work-popup-close">Cerrar</a>
-                                <div class="margin-b-30">
-                                    <h3 class="margin-b-5">ASCATUR</h3>
-                                    <span>Asociación Cámara de Desarrollo del Comercio y Turismo de La Cruz</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                            <ul class="list-inline work-popup-tag">
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Detalle</a></li>
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Afiliado</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p class="margin-b-5"><strong>Invita:</strong> ASCATUR</p>
-                                            <p class="margin-b-5"><strong>Patrocina:</strong> Cooperativa</p>
-                                            <p class="margin-b-5"><strong>Invitados:</strong> Publico General</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Work -->
-                </div>
-                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
-                    <!-- Work -->
-                    <div class="work work-popup-trigger">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="~/img/Imagenes_descargadas/mascarada.jpg" alt="Portfolio Image">
-                        </div>
-                        <div class="work-popup-overlay">
-                            <div class="work-popup-content">
-                                <a href="javascript:void(0);" class="work-popup-close">Cerrar</a>
-                                <div class="margin-b-30">
-                                    <h3 class="margin-b-5">ASCATUR</h3>
-                                    <span>Asociación Cámara de Desarrollo del Comercio y Turismo de La Cruz</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                            <ul class="list-inline work-popup-tag">
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Detalle</a></li>
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Afiliado</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p class="margin-b-5"><strong>Invita:</strong> ASCATUR</p>
-                                            <p class="margin-b-5"><strong>Patrocina:</strong> Cooperativa</p>
-                                            <p class="margin-b-5"><strong>Invitados:</strong> Publico General</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Work -->
-                </div>
-                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
-                    <!-- Work -->
-                    <!-- Work -->
-                    <div class="work work-popup-trigger">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="~/img/Imagenes_descargadas/parque.jpg" alt="Portfolio Image">
-                        </div>
-                        <div class="work-popup-overlay">
-                            <div class="work-popup-content">
-                                <a href="javascript:void(0);" class="work-popup-close">Cerrar</a>
-                                <div class="margin-b-30">
-                                    <h3 class="margin-b-5">ASCATUR</h3>
-                                    <span>Asociación Cámara de Desarrollo del Comercio y Turismo de La Cruz</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                            <ul class="list-inline work-popup-tag">
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Detalle</a></li>
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Afiliado</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p class="margin-b-5"><strong>Invita:</strong> ASCATUR</p>
-                                            <p class="margin-b-5"><strong>Patrocina:</strong> Cooperativa</p>
-                                            <p class="margin-b-5"><strong>Invitados:</strong> Publico General</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Work -->
-                </div>
-                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
-                    <!-- Work -->
-                    <div class="work work-popup-trigger">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="~/img/Imagenes_descargadas/talleres1.jpg" alt="Portfolio Image">
-                        </div>
-                        <div class="work-popup-overlay">
-                            <div class="work-popup-content">
-                                <a href="javascript:void(0);" class="work-popup-close">Cerrar</a>
-                                <div class="margin-b-30">
-                                    <h3 class="margin-b-5">ASCATUR</h3>
-                                    <span>Asociación Cámara de Desarrollo del Comercio y Turismo de La Cruz</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                            <ul class="list-inline work-popup-tag">
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Detalle</a></li>
-                                                <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Afiliado</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="margin-t-10 sm-margin-t-0">
-                                            <p class="margin-b-5"><strong>Invita:</strong> ASCATUR</p>
-                                            <p class="margin-b-5"><strong>Patrocina:</strong> Cooperativa</p>
-                                            <p class="margin-b-5"><strong>Invitados:</strong> Publico General</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Work -->
-                </div>*@
-            </div>
-            <!-- End Masonry Grid -->
         </div>
-    </div>
     <!-- End Work -->
     <!-- Productos -->
     <div id="productos">
@@ -391,41 +160,11 @@
 
             <div class="row">
                 @Html.Partial("_RandomProductos", Model)
-                @*<!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <img class="img-responsive wow fadeInLeft" src="~/img/Imagenes_descargadas/productos1.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s" data-wow-iteration="2">
-                    </div>
-                    <h4><a href="#">Artesanias</a> <span class="text-uppercase margin-l-20">Souvenir</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <a class="link" href="#">Read More</a>
-                </div>
-                <!-- End Latest Products -->
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <img class="img-responsive wow fadeInUp" src="~/img/Imagenes_descargadas/comercio.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".1s" data-wow-iteration="2">
-                    </div>
-                    <h4><a href="#">Comercio</a> <span class="text-uppercase margin-l-20">Rural</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <a class="link" href="#">Read More</a>
-                </div>
-                <!-- End Latest Products -->
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <img class="img-responsive wow fadeInRight" src="~/img/Imagenes_descargadas/Gastronomia.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".3s" data-wow-iteration="2">
-                    </div>
-                    <h4><a href="#">Comidas</a> <span class="text-uppercase margin-l-20">Gastronomia</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <a class="link" href="#">Read More</a>
-                </div>
 
-
-                <!-- End Latest Products -->*@
             </div>
             <!--// end row -->
-            <a class="bottom" href="#">Ver todos..</a>
+            <br />
+            <a class="link" asp-controller="Producto" asp-action="List">VER TODOS LOS PRODUCTOS</a>
         </div>
 
 
@@ -460,6 +199,7 @@
             <div id="map" class="map height-400"></div>
             <address class="gmap-address">
                 <p class="color-heading margin-b-0">Asociación Cámara de Desarrollo del Comercio y Turismo de La Cruz, Guanacaste, Costa Rica</p>
+                <p class="color-heading margin-b-0">Correo: <b>ascaturlacruz@gmail.com</b></p>
             </address>
         </div>
         <!-- End Google Map -->

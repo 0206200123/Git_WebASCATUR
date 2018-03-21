@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*----------------------------------------------------------------------
 
 	MASTER STYLESHEET
@@ -396,7 +396,7 @@ fieldset[disabled] .btn-theme {
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(../img/1920x1080/01.jpg) no-repeat;
+  /*background: url(../img/1920x1080/01.jpg) no-repeat;*/
   background-size: cover;
   background-position: center center;
   padding: 290px 0 280px;
@@ -631,11 +631,12 @@ fieldset[disabled] .btn-theme {
 
 /* Navbar */
 .header .navbar {
-  margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    background-color: #95a9b866;
 }
 
 /* Navbar Toggle */
@@ -1180,7 +1181,7 @@ fieldset[disabled] .btn-theme {
 .container-full-width {
   margin-right: auto;
   margin-left: auto;
-  padding: 50px 50px 0px 50px;
+  padding: 50px 0px 0px 0px;
 }
 
 .container-full-width:before, .container-full-width:after {
@@ -1239,13 +1240,13 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-md {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .content-lg {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /*------------------------------------------------------------------

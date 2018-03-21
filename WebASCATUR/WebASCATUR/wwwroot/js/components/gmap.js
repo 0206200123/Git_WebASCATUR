@@ -119,8 +119,8 @@ window.initMap = function() {
         // Create a map object, and include the MapTypeId to add
         // to the map type control.
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 11.071093, lng: -85.630378},
-          zoom: 16,
+          center: {lat: 11.051093, lng: -85.630378},
+          zoom: 13,
           mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
                     'styled_map']

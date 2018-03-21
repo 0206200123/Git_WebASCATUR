@@ -13,9 +13,10 @@
         <div class="margin-b-20">
             <img class="img-responsive wow fadeInDown" src="@(OptionsApplicationConfiguration.Value.PathImage + oferta.ImagenPrimaria)" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s" data-wow-iteration="2">
         </div>
-        <h4><a href="#">@oferta.Nombre</a></h4>
-        <p>@oferta.Detalle</p>
-        <a class="link" href="#">Ver mas detalle</a>
+        <h4><a asp-controller="Oferta" asp-action="Detalle" asp-route-Id="@oferta.Id">@oferta.Nombre</a></h4>
+        <p style="white-space: nowrap; width: 18em;text-overflow:ellipsis; overflow: hidden;">@oferta.Detalle</p>
+
+        <a class="link" asp-controller="Servicio" asp-action="Detalle" asp-route-Id="@oferta.Id">Leer Más</a>
     </div>
 
 }

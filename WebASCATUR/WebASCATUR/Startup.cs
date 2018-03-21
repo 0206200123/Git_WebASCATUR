@@ -43,6 +43,7 @@ namespace WebASCATUR
             services.AddTransient<IEventoRepository, EventoRepository>();
             services.AddTransient<IProductoRepository, ProductoRepository>();
             services.AddTransient<IOfertaRepository, OfertaRepository>();
+            services.AddTransient<IComercioRepository, ComercioRepository>();
 
             services.AddMvc();
             //var connection = @"Server=MANUEL\SQLEXPRESS;Database=AdmWebASCATUR_Default_v1;User Id=Emilio;Password=Ema2Vargas$;";
@@ -68,6 +69,11 @@ namespace WebASCATUR
 
             app.UseMvc(routes =>
             {
+                routes.MapRoute(
+                  name: "comerciodetails",
+                  template: "Comercio/Detalle/{Id?}",
+                  defaults: new { Controller = "Comercio", action = "Detalle" });
+
                 routes.MapRoute(
                    name: "productodetails",
                    template: "Producto/Detalle/{Id?}",
