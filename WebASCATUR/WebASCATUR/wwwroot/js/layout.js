@@ -57,10 +57,10 @@ var Layout = function () {
     // handle carousel
     var handleCarousel = function() {
         var $item = $('.carousel .item'); 
-        var $wHeight = $(window).height();
+        var $wHeight = $(window).innerHeight();
         $item.eq(0).addClass('active');
-        $item.height($wHeight); 
-        $item.addClass('full-screen');
+        //$item.height($wHeight); 
+        //$item.addClass('full-screen');
 
         $('.carousel img').each(function() {
             var $src = $(this).attr('src');
@@ -73,7 +73,7 @@ var Layout = function () {
         });
 
         $(window).on('resize', function (){
-            $wHeight = $(window).height();
+            $wHeight = $(window).innerHeight();
             $item.height($wHeight);
         });
     }

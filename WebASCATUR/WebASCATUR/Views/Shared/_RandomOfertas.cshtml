@@ -16,7 +16,7 @@
         <h4><a asp-controller="Oferta" asp-action="Detalle" asp-route-Id="@oferta.Id">@oferta.Nombre</a></h4>
         <p style="white-space: nowrap; width: 18em;text-overflow:ellipsis; overflow: hidden;">@oferta.Detalle</p>
 
-        <a class="link" asp-controller="Servicio" asp-action="Detalle" asp-route-Id="@oferta.Id">Leer Más</a>
+        <a class="link" asp-controller="Oferta" asp-action="Detalle" asp-route-Id="@oferta.Id">Leer Más</a>
     </div>
 
 }
