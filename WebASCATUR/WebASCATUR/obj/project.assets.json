@@ -13118,11 +13118,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manue\\source\\repos\\Git_WebASCATUR\\WebASCATUR\\WebASCATUR\\WebASCATUR.csproj",
+      "projectUniqueName": "C:\\Users\\Manue\\source\\repos\\Resp_ASCATUR\\Git_WebASCATUR\\WebASCATUR\\WebASCATUR\\WebASCATUR.csproj",
       "projectName": "WebASCATUR",
-      "projectPath": "C:\\Users\\Manue\\source\\repos\\Git_WebASCATUR\\WebASCATUR\\WebASCATUR\\WebASCATUR.csproj",
+      "projectPath": "C:\\Users\\Manue\\source\\repos\\Resp_ASCATUR\\Git_WebASCATUR\\WebASCATUR\\WebASCATUR\\WebASCATUR.csproj",
       "packagesPath": "C:\\Users\\Manue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manue\\source\\repos\\Git_WebASCATUR\\WebASCATUR\\WebASCATUR\\obj\\",
+      "outputPath": "C:\\Users\\Manue\\source\\repos\\Resp_ASCATUR\\Git_WebASCATUR\\WebASCATUR\\WebASCATUR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

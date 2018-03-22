@@ -14753,11 +14753,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manue\\source\\repos\\Git_WebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR.Web\\AdmWebASCATUR.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Manue\\source\\repos\\Resp_ASCATUR\\Git_WebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR.Web\\AdmWebASCATUR.Web.csproj",
       "projectName": "AdmWebASCATUR.Web",
-      "projectPath": "C:\\Users\\Manue\\source\\repos\\Git_WebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR.Web\\AdmWebASCATUR.Web.csproj",
+      "projectPath": "C:\\Users\\Manue\\source\\repos\\Resp_ASCATUR\\Git_WebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR.Web\\AdmWebASCATUR.Web.csproj",
       "packagesPath": "C:\\Users\\Manue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manue\\source\\repos\\Git_WebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR.Web\\obj\\",
+      "outputPath": "C:\\Users\\Manue\\source\\repos\\Resp_ASCATUR\\Git_WebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR\\AdmWebASCATUR.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
